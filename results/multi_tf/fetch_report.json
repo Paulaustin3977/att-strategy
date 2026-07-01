@@ -1,0 +1,2402 @@
+[
+  {
+    "symbol": "ES=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/ES_F_15m.csv",
+    "n_bars": 4513,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ES=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/ES_F_30m.csv",
+    "n_bars": 2257,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ES=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/ES_F_1h.csv",
+    "n_bars": 13710,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ES=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/ES_F_4h.csv",
+    "n_bars": 3717,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ES=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/ES_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NQ=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/NQ_F_15m.csv",
+    "n_bars": 4513,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NQ=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/NQ_F_30m.csv",
+    "n_bars": 2257,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NQ=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/NQ_F_1h.csv",
+    "n_bars": 13708,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NQ=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/NQ_F_4h.csv",
+    "n_bars": 3716,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NQ=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/NQ_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "YM=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/YM_F_15m.csv",
+    "n_bars": 4513,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "YM=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/YM_F_30m.csv",
+    "n_bars": 2257,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "YM=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/YM_F_1h.csv",
+    "n_bars": 13704,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "YM=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/YM_F_4h.csv",
+    "n_bars": 3716,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "YM=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/YM_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "RTY=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/RTY_F_15m.csv",
+    "n_bars": 4513,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "RTY=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/RTY_F_30m.csv",
+    "n_bars": 2257,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "RTY=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/RTY_F_1h.csv",
+    "n_bars": 13742,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "RTY=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/RTY_F_4h.csv",
+    "n_bars": 3723,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "RTY=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/RTY_F_weekly.csv",
+    "n_bars": 469,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CL=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/CL_F_15m.csv",
+    "n_bars": 4542,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CL=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/CL_F_30m.csv",
+    "n_bars": 2273,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CL=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/CL_F_1h.csv",
+    "n_bars": 13483,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CL=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/CL_F_4h.csv",
+    "n_bars": 3677,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CL=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/CL_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "BZ=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/BZ_F_15m.csv",
+    "n_bars": 4514,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "BZ=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/BZ_F_30m.csv",
+    "n_bars": 2268,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "BZ=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/BZ_F_1h.csv",
+    "n_bars": 13549,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "BZ=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/BZ_F_4h.csv",
+    "n_bars": 3686,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "BZ=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/BZ_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NG=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/NG_F_15m.csv",
+    "n_bars": 4538,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NG=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/NG_F_30m.csv",
+    "n_bars": 2270,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NG=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/NG_F_1h.csv",
+    "n_bars": 13360,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NG=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/NG_F_4h.csv",
+    "n_bars": 3637,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NG=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/NG_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "HO=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/HO_F_15m.csv",
+    "n_bars": 4505,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "HO=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/HO_F_30m.csv",
+    "n_bars": 2267,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "HO=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/HO_F_1h.csv",
+    "n_bars": 13368,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "HO=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/HO_F_4h.csv",
+    "n_bars": 3679,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "HO=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/HO_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "RB=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/RB_F_15m.csv",
+    "n_bars": 4498,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "RB=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/RB_F_30m.csv",
+    "n_bars": 2263,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "RB=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/RB_F_1h.csv",
+    "n_bars": 13327,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "RB=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/RB_F_4h.csv",
+    "n_bars": 3671,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "RB=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/RB_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZC=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/ZC_F_15m.csv",
+    "n_bars": 3493,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZC=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/ZC_F_30m.csv",
+    "n_bars": 1772,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZC=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/ZC_F_1h.csv",
+    "n_bars": 11177,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZC=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/ZC_F_4h.csv",
+    "n_bars": 2954,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZC=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/ZC_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZW=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/ZW_F_15m.csv",
+    "n_bars": 3494,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZW=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/ZW_F_30m.csv",
+    "n_bars": 1772,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZW=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/ZW_F_1h.csv",
+    "n_bars": 11185,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZW=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/ZW_F_4h.csv",
+    "n_bars": 2955,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZW=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/ZW_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZS=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/ZS_F_15m.csv",
+    "n_bars": 3493,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZS=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/ZS_F_30m.csv",
+    "n_bars": 1772,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZS=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/ZS_F_1h.csv",
+    "n_bars": 11188,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZS=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/ZS_F_4h.csv",
+    "n_bars": 2956,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZS=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/ZS_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZM=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/ZM_F_15m.csv",
+    "n_bars": 3490,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZM=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/ZM_F_30m.csv",
+    "n_bars": 1772,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZM=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/ZM_F_1h.csv",
+    "n_bars": 11175,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZM=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/ZM_F_4h.csv",
+    "n_bars": 2953,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZM=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/ZM_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZL=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/ZL_F_15m.csv",
+    "n_bars": 3493,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZL=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/ZL_F_30m.csv",
+    "n_bars": 1772,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZL=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/ZL_F_1h.csv",
+    "n_bars": 11170,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZL=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/ZL_F_4h.csv",
+    "n_bars": 2953,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "ZL=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/ZL_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CT=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/CT_F_15m.csv",
+    "n_bars": 169,
+    "ok": false,
+    "error": "insufficient bars (169 < 200)"
+  },
+  {
+    "symbol": "CT=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/CT_F_30m.csv",
+    "n_bars": 169,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CT=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/CT_F_1h.csv",
+    "n_bars": 7567,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CT=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/CT_F_4h.csv",
+    "n_bars": 2444,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CT=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/CT_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "KC=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/KC_F_15m.csv",
+    "n_bars": 1769,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "KC=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/KC_F_30m.csv",
+    "n_bars": 909,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "KC=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/KC_F_1h.csv",
+    "n_bars": 5853,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "KC=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/KC_F_4h.csv",
+    "n_bars": 1793,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "KC=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/KC_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "SB=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/SB_F_15m.csv",
+    "n_bars": 1865,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "SB=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/SB_F_30m.csv",
+    "n_bars": 934,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "SB=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/SB_F_1h.csv",
+    "n_bars": 5872,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "SB=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/SB_F_4h.csv",
+    "n_bars": 2137,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "SB=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/SB_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CC=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/CC_F_15m.csv",
+    "n_bars": 1695,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CC=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/CC_F_30m.csv",
+    "n_bars": 872,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CC=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/CC_F_1h.csv",
+    "n_bars": 5814,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CC=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/CC_F_4h.csv",
+    "n_bars": 1782,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CC=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/CC_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "OJ=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/OJ_F_15m.csv",
+    "n_bars": 1133,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "OJ=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/OJ_F_30m.csv",
+    "n_bars": 579,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "OJ=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/OJ_F_1h.csv",
+    "n_bars": 3318,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "OJ=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/OJ_F_4h.csv",
+    "n_bars": 1123,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "OJ=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/OJ_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "LE=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/LE_F_15m.csv",
+    "n_bars": 930,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "LE=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/LE_F_30m.csv",
+    "n_bars": 490,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "LE=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/LE_F_1h.csv",
+    "n_bars": 3593,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "LE=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/LE_F_4h.csv",
+    "n_bars": 1202,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "LE=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/LE_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GF=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/GF_F_15m.csv",
+    "n_bars": 931,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GF=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/GF_F_30m.csv",
+    "n_bars": 490,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GF=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/GF_F_1h.csv",
+    "n_bars": 3576,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GF=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/GF_F_4h.csv",
+    "n_bars": 1202,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GF=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/GF_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "HE=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/HE_F_15m.csv",
+    "n_bars": 931,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "HE=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/HE_F_30m.csv",
+    "n_bars": 490,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "HE=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/HE_F_1h.csv",
+    "n_bars": 3591,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "HE=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/HE_F_4h.csv",
+    "n_bars": 1202,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "HE=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/HE_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "LBS=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/LBS_F_15m.csv",
+    "n_bars": 0,
+    "ok": false,
+    "error": "empty/normalized to empty"
+  },
+  {
+    "symbol": "LBS=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/LBS_F_30m.csv",
+    "n_bars": 0,
+    "ok": false,
+    "error": "empty/normalized to empty"
+  },
+  {
+    "symbol": "LBS=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/LBS_F_1h.csv",
+    "n_bars": 0,
+    "ok": false,
+    "error": "empty/normalized to empty"
+  },
+  {
+    "symbol": "LBS=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/LBS_F_4h.csv",
+    "n_bars": 0,
+    "ok": false,
+    "error": "1h source empty"
+  },
+  {
+    "symbol": "LBS=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/LBS_F_weekly.csv",
+    "n_bars": 360,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GC=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/GC_F_15m.csv",
+    "n_bars": 4539,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GC=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/GC_F_30m.csv",
+    "n_bars": 2270,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GC=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/GC_F_1h.csv",
+    "n_bars": 13748,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GC=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/GC_F_4h.csv",
+    "n_bars": 3723,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GC=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/GC_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "SI=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/SI_F_15m.csv",
+    "n_bars": 4538,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "SI=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/SI_F_30m.csv",
+    "n_bars": 2270,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "SI=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/SI_F_1h.csv",
+    "n_bars": 13746,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "SI=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/SI_F_4h.csv",
+    "n_bars": 3723,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "SI=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/SI_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "HG=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/HG_F_15m.csv",
+    "n_bars": 4539,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "HG=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/HG_F_30m.csv",
+    "n_bars": 2270,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "HG=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/HG_F_1h.csv",
+    "n_bars": 13744,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "HG=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/HG_F_4h.csv",
+    "n_bars": 3723,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "HG=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/HG_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "PL=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/PL_F_15m.csv",
+    "n_bars": 4538,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "PL=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/PL_F_30m.csv",
+    "n_bars": 2270,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "PL=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/PL_F_1h.csv",
+    "n_bars": 13729,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "PL=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/PL_F_4h.csv",
+    "n_bars": 3719,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "PL=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/PL_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "PA=F",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/PA_F_15m.csv",
+    "n_bars": 4437,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "PA=F",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/PA_F_30m.csv",
+    "n_bars": 2261,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "PA=F",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/PA_F_1h.csv",
+    "n_bars": 13706,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "PA=F",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/PA_F_4h.csv",
+    "n_bars": 3719,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "PA=F",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/PA_F_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^XAU",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/_XAU_15m.csv",
+    "n_bars": 1560,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^XAU",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/_XAU_30m.csv",
+    "n_bars": 780,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^XAU",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/_XAU_1h.csv",
+    "n_bars": 5082,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^XAU",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/_XAU_4h.csv",
+    "n_bars": 1707,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^XAU",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/_XAU_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURUSD=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/EURUSD_X_15m.csv",
+    "n_bars": 5609,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURUSD=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/EURUSD_X_30m.csv",
+    "n_bars": 2805,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURUSD=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/EURUSD_X_1h.csv",
+    "n_bars": 17256,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURUSD=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/EURUSD_X_4h.csv",
+    "n_bars": 4441,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURUSD=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/EURUSD_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPUSD=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/GBPUSD_X_15m.csv",
+    "n_bars": 5609,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPUSD=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/GBPUSD_X_30m.csv",
+    "n_bars": 2805,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPUSD=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/GBPUSD_X_1h.csv",
+    "n_bars": 17257,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPUSD=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/GBPUSD_X_4h.csv",
+    "n_bars": 4441,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPUSD=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/GBPUSD_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "USDJPY=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/USDJPY_X_15m.csv",
+    "n_bars": 5591,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "USDJPY=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/USDJPY_X_30m.csv",
+    "n_bars": 2797,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "USDJPY=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/USDJPY_X_1h.csv",
+    "n_bars": 17143,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "USDJPY=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/USDJPY_X_4h.csv",
+    "n_bars": 4435,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "USDJPY=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/USDJPY_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "USDCHF=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/USDCHF_X_15m.csv",
+    "n_bars": 5588,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "USDCHF=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/USDCHF_X_30m.csv",
+    "n_bars": 2796,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "USDCHF=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/USDCHF_X_1h.csv",
+    "n_bars": 17196,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "USDCHF=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/USDCHF_X_4h.csv",
+    "n_bars": 4442,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "USDCHF=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/USDCHF_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDUSD=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/AUDUSD_X_15m.csv",
+    "n_bars": 5610,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDUSD=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/AUDUSD_X_30m.csv",
+    "n_bars": 2806,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDUSD=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/AUDUSD_X_1h.csv",
+    "n_bars": 17355,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDUSD=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/AUDUSD_X_4h.csv",
+    "n_bars": 4456,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDUSD=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/AUDUSD_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDUSD=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/NZDUSD_X_15m.csv",
+    "n_bars": 5613,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDUSD=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/NZDUSD_X_30m.csv",
+    "n_bars": 2808,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDUSD=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/NZDUSD_X_1h.csv",
+    "n_bars": 17347,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDUSD=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/NZDUSD_X_4h.csv",
+    "n_bars": 4455,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDUSD=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/NZDUSD_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "USDCAD=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/USDCAD_X_15m.csv",
+    "n_bars": 5603,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "USDCAD=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/USDCAD_X_30m.csv",
+    "n_bars": 2809,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "USDCAD=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/USDCAD_X_1h.csv",
+    "n_bars": 17360,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "USDCAD=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/USDCAD_X_4h.csv",
+    "n_bars": 4456,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "USDCAD=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/USDCAD_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURJPY=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/EURJPY_X_15m.csv",
+    "n_bars": 5610,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURJPY=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/EURJPY_X_30m.csv",
+    "n_bars": 2806,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURJPY=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/EURJPY_X_1h.csv",
+    "n_bars": 17268,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURJPY=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/EURJPY_X_4h.csv",
+    "n_bars": 4444,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURJPY=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/EURJPY_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPJPY=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/GBPJPY_X_15m.csv",
+    "n_bars": 5610,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPJPY=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/GBPJPY_X_30m.csv",
+    "n_bars": 2806,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPJPY=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/GBPJPY_X_1h.csv",
+    "n_bars": 17267,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPJPY=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/GBPJPY_X_4h.csv",
+    "n_bars": 4443,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPJPY=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/GBPJPY_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDJPY=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/AUDJPY_X_15m.csv",
+    "n_bars": 5609,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDJPY=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/AUDJPY_X_30m.csv",
+    "n_bars": 2805,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDJPY=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/AUDJPY_X_1h.csv",
+    "n_bars": 17268,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDJPY=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/AUDJPY_X_4h.csv",
+    "n_bars": 4444,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDJPY=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/AUDJPY_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CADJPY=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/CADJPY_X_15m.csv",
+    "n_bars": 5611,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CADJPY=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/CADJPY_X_30m.csv",
+    "n_bars": 2807,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CADJPY=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/CADJPY_X_1h.csv",
+    "n_bars": 17271,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CADJPY=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/CADJPY_X_4h.csv",
+    "n_bars": 4443,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CADJPY=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/CADJPY_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDJPY=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/NZDJPY_X_15m.csv",
+    "n_bars": 5609,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDJPY=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/NZDJPY_X_30m.csv",
+    "n_bars": 2805,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDJPY=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/NZDJPY_X_1h.csv",
+    "n_bars": 17263,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDJPY=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/NZDJPY_X_4h.csv",
+    "n_bars": 4443,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDJPY=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/NZDJPY_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CHFJPY=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/CHFJPY_X_15m.csv",
+    "n_bars": 5609,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CHFJPY=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/CHFJPY_X_30m.csv",
+    "n_bars": 2805,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CHFJPY=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/CHFJPY_X_1h.csv",
+    "n_bars": 17255,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CHFJPY=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/CHFJPY_X_4h.csv",
+    "n_bars": 4439,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "CHFJPY=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/CHFJPY_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURGBP=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/EURGBP_X_15m.csv",
+    "n_bars": 5612,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURGBP=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/EURGBP_X_30m.csv",
+    "n_bars": 2808,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURGBP=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/EURGBP_X_1h.csv",
+    "n_bars": 17282,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURGBP=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/EURGBP_X_4h.csv",
+    "n_bars": 4446,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURGBP=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/EURGBP_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURCHF=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/EURCHF_X_15m.csv",
+    "n_bars": 5609,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURCHF=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/EURCHF_X_30m.csv",
+    "n_bars": 2805,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURCHF=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/EURCHF_X_1h.csv",
+    "n_bars": 17267,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURCHF=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/EURCHF_X_4h.csv",
+    "n_bars": 4442,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURCHF=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/EURCHF_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPCHF=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/GBPCHF_X_15m.csv",
+    "n_bars": 5609,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPCHF=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/GBPCHF_X_30m.csv",
+    "n_bars": 2805,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPCHF=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/GBPCHF_X_1h.csv",
+    "n_bars": 17264,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPCHF=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/GBPCHF_X_4h.csv",
+    "n_bars": 4442,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPCHF=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/GBPCHF_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURCAD=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/EURCAD_X_15m.csv",
+    "n_bars": 5610,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURCAD=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/EURCAD_X_30m.csv",
+    "n_bars": 2806,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURCAD=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/EURCAD_X_1h.csv",
+    "n_bars": 17283,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURCAD=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/EURCAD_X_4h.csv",
+    "n_bars": 4445,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURCAD=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/EURCAD_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURAUD=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/EURAUD_X_15m.csv",
+    "n_bars": 5609,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURAUD=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/EURAUD_X_30m.csv",
+    "n_bars": 2805,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURAUD=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/EURAUD_X_1h.csv",
+    "n_bars": 17281,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURAUD=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/EURAUD_X_4h.csv",
+    "n_bars": 4446,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURAUD=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/EURAUD_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURNZD=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/EURNZD_X_15m.csv",
+    "n_bars": 5610,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURNZD=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/EURNZD_X_30m.csv",
+    "n_bars": 2806,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURNZD=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/EURNZD_X_1h.csv",
+    "n_bars": 17274,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURNZD=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/EURNZD_X_4h.csv",
+    "n_bars": 4445,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "EURNZD=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/EURNZD_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPAUD=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/GBPAUD_X_15m.csv",
+    "n_bars": 5609,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPAUD=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/GBPAUD_X_30m.csv",
+    "n_bars": 2805,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPAUD=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/GBPAUD_X_1h.csv",
+    "n_bars": 17343,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPAUD=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/GBPAUD_X_4h.csv",
+    "n_bars": 4456,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPAUD=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/GBPAUD_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPNZD=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/GBPNZD_X_15m.csv",
+    "n_bars": 5611,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPNZD=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/GBPNZD_X_30m.csv",
+    "n_bars": 2807,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPNZD=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/GBPNZD_X_1h.csv",
+    "n_bars": 17337,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPNZD=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/GBPNZD_X_4h.csv",
+    "n_bars": 4455,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPNZD=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/GBPNZD_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPCAD=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/GBPCAD_X_15m.csv",
+    "n_bars": 5611,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPCAD=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/GBPCAD_X_30m.csv",
+    "n_bars": 2807,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPCAD=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/GBPCAD_X_1h.csv",
+    "n_bars": 17347,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPCAD=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/GBPCAD_X_4h.csv",
+    "n_bars": 4456,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "GBPCAD=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/GBPCAD_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDNZD=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/AUDNZD_X_15m.csv",
+    "n_bars": 5609,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDNZD=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/AUDNZD_X_30m.csv",
+    "n_bars": 2805,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDNZD=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/AUDNZD_X_1h.csv",
+    "n_bars": 17349,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDNZD=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/AUDNZD_X_4h.csv",
+    "n_bars": 4456,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDNZD=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/AUDNZD_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDCAD=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/AUDCAD_X_15m.csv",
+    "n_bars": 5609,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDCAD=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/AUDCAD_X_30m.csv",
+    "n_bars": 2805,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDCAD=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/AUDCAD_X_1h.csv",
+    "n_bars": 17352,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDCAD=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/AUDCAD_X_4h.csv",
+    "n_bars": 4456,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDCAD=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/AUDCAD_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDCHF=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/AUDCHF_X_15m.csv",
+    "n_bars": 5609,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDCHF=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/AUDCHF_X_30m.csv",
+    "n_bars": 2805,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDCHF=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/AUDCHF_X_1h.csv",
+    "n_bars": 17317,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDCHF=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/AUDCHF_X_4h.csv",
+    "n_bars": 4450,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "AUDCHF=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/AUDCHF_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDCAD=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/NZDCAD_X_15m.csv",
+    "n_bars": 5610,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDCAD=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/NZDCAD_X_30m.csv",
+    "n_bars": 2806,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDCAD=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/NZDCAD_X_1h.csv",
+    "n_bars": 17343,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDCAD=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/NZDCAD_X_4h.csv",
+    "n_bars": 4455,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDCAD=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/NZDCAD_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDCHF=X",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/NZDCHF_X_15m.csv",
+    "n_bars": 5609,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDCHF=X",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/NZDCHF_X_30m.csv",
+    "n_bars": 2805,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDCHF=X",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/NZDCHF_X_1h.csv",
+    "n_bars": 17335,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDCHF=X",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/NZDCHF_X_4h.csv",
+    "n_bars": 4453,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "NZDCHF=X",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/NZDCHF_X_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^GSPC",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/_GSPC_15m.csv",
+    "n_bars": 1560,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^GSPC",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/_GSPC_30m.csv",
+    "n_bars": 780,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^GSPC",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/_GSPC_1h.csv",
+    "n_bars": 5082,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^GSPC",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/_GSPC_4h.csv",
+    "n_bars": 1707,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^GSPC",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/_GSPC_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^IXIC",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/_IXIC_15m.csv",
+    "n_bars": 1560,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^IXIC",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/_IXIC_30m.csv",
+    "n_bars": 780,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^IXIC",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/_IXIC_1h.csv",
+    "n_bars": 5082,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^IXIC",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/_IXIC_4h.csv",
+    "n_bars": 1707,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^IXIC",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/_IXIC_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^DJI",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/_DJI_15m.csv",
+    "n_bars": 1560,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^DJI",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/_DJI_30m.csv",
+    "n_bars": 780,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^DJI",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/_DJI_1h.csv",
+    "n_bars": 5082,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^DJI",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/_DJI_4h.csv",
+    "n_bars": 1707,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^DJI",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/_DJI_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^RUT",
+    "tf": "15m",
+    "csv_path": "/Users/paul/att-strategy/data/_RUT_15m.csv",
+    "n_bars": 1560,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^RUT",
+    "tf": "30m",
+    "csv_path": "/Users/paul/att-strategy/data/_RUT_30m.csv",
+    "n_bars": 780,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^RUT",
+    "tf": "1h",
+    "csv_path": "/Users/paul/att-strategy/data/_RUT_1h.csv",
+    "n_bars": 5081,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^RUT",
+    "tf": "4h",
+    "csv_path": "/Users/paul/att-strategy/data/_RUT_4h.csv",
+    "n_bars": 1707,
+    "ok": true,
+    "error": null
+  },
+  {
+    "symbol": "^RUT",
+    "tf": "weekly",
+    "csv_path": "/Users/paul/att-strategy/data/_RUT_weekly.csv",
+    "n_bars": 523,
+    "ok": true,
+    "error": null
+  }
+]

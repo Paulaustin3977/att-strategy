@@ -1,0 +1,42 @@
+{
+  "tf": "15m",
+  "winner": {
+    "adx_len": 10.0,
+    "atr_len": 14.0,
+    "ema_len": 50.0,
+    "rsi_len": 3.0,
+    "dmi_len": 10.0,
+    "st_atr_len": 14.0,
+    "st_mult": 4.0,
+    "adx_trend": 25.0,
+    "adx_range": 18.0,
+    "bbwpct_min": 0.2,
+    "rsi_oversold": 5.0,
+    "rsi_overbought": 90.0,
+    "sma_trend_len": 100.0,
+    "mr_trail_mult": 1.0,
+    "risk_pct": 0.5,
+    "trail_mult": 3.0,
+    "max_bars_in_trade": 30.0,
+    "dead_money_pct": 0.25
+  },
+  "mean_oos_sharpe": -0.6964622685281764,
+  "median_oos_sharpe": -0.634856805676254,
+  "mean_oos_total_return": -0.0030700316233433014,
+  "mean_oos_max_dd_pct": -0.6326566862338001,
+  "pct_symbols_positive_oos": 0.0,
+  "pct_symbols_positive_return": 0.23255813953488372,
+  "pct_symbols_low_dd": 1.0,
+  "robustness_score": -0.0,
+  "n_symbols_qualified": 43,
+  "n_symbols_total": 58,
+  "passes_filters": false,
+  "filters": {
+    "min_pct_pos_oos": 0.6,
+    "min_pct_low_dd": 0.7,
+    "min_pct_pos_return": 0.55
+  },
+  "filter_pass_pct_pos_oos": false,
+  "filter_pass_pct_low_dd": true,
+  "filter_pass_pct_pos_return": false
+}

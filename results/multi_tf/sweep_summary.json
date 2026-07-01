@@ -1,0 +1,13 @@
+[
+  {
+    "tf": "15m",
+    "n_files": 58,
+    "n_traded": 58,
+    "n_with_trades": 58,
+    "pct_profitable": 0.3448,
+    "mean_sharpe": -3.1676,
+    "median_sharpe": -4.1025,
+    "mean_total_return": -0.2713,
+    "mean_max_dd": -36.44
+  }
+]

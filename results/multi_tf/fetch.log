@@ -1,0 +1,1221 @@
+12:44:08 INFO Fetching 60 symbols × 5 timeframes = 300 pairs
+12:44:08 INFO [1/300] ES=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:08 INFO     ok (4513 bars) -> ES_F_15m.csv
+12:44:08 INFO [2/300] ES=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:08 INFO     ok (2257 bars) -> ES_F_30m.csv
+12:44:09 INFO [3/300] ES=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:09 INFO     ok (13710 bars) -> ES_F_1h.csv
+12:44:09 INFO [4/300] ES=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:10 INFO     ok (3717 bars) -> ES_F_4h.csv
+12:44:10 INFO [5/300] ES=F         weekly ...
+12:44:10 INFO     ok (523 bars) -> ES_F_weekly.csv
+12:44:10 INFO [6/300] NQ=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:10 INFO     ok (4513 bars) -> NQ_F_15m.csv
+12:44:11 INFO [7/300] NQ=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:11 INFO     ok (2257 bars) -> NQ_F_30m.csv
+12:44:11 INFO [8/300] NQ=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:11 INFO     ok (13708 bars) -> NQ_F_1h.csv
+12:44:11 INFO [9/300] NQ=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:12 INFO     ok (3716 bars) -> NQ_F_4h.csv
+12:44:12 INFO [10/300] NQ=F         weekly ...
+12:44:12 INFO     ok (523 bars) -> NQ_F_weekly.csv
+12:44:12 INFO [11/300] YM=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:12 INFO     ok (4513 bars) -> YM_F_15m.csv
+12:44:13 INFO [12/300] YM=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:13 INFO     ok (2257 bars) -> YM_F_30m.csv
+12:44:13 INFO [13/300] YM=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:13 INFO     ok (13704 bars) -> YM_F_1h.csv
+12:44:13 INFO [14/300] YM=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:14 INFO     ok (3716 bars) -> YM_F_4h.csv
+12:44:14 INFO [15/300] YM=F         weekly ...
+12:44:14 INFO     ok (523 bars) -> YM_F_weekly.csv
+12:44:14 INFO [16/300] RTY=F        15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:14 INFO     ok (4513 bars) -> RTY_F_15m.csv
+12:44:15 INFO [17/300] RTY=F        30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:15 INFO     ok (2257 bars) -> RTY_F_30m.csv
+12:44:15 INFO [18/300] RTY=F        1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:15 INFO     ok (13742 bars) -> RTY_F_1h.csv
+12:44:15 INFO [19/300] RTY=F        4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:16 INFO     ok (3723 bars) -> RTY_F_4h.csv
+12:44:16 INFO [20/300] RTY=F        weekly ...
+12:44:16 INFO     ok (469 bars) -> RTY_F_weekly.csv
+12:44:16 INFO [21/300] CL=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:16 INFO     ok (4542 bars) -> CL_F_15m.csv
+12:44:17 INFO [22/300] CL=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:17 INFO     ok (2273 bars) -> CL_F_30m.csv
+12:44:17 INFO [23/300] CL=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:17 INFO     ok (13483 bars) -> CL_F_1h.csv
+12:44:18 INFO [24/300] CL=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:18 INFO     ok (3677 bars) -> CL_F_4h.csv
+12:44:18 INFO [25/300] CL=F         weekly ...
+12:44:18 INFO     ok (523 bars) -> CL_F_weekly.csv
+12:44:18 INFO [26/300] BZ=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:19 INFO     ok (4514 bars) -> BZ_F_15m.csv
+12:44:19 INFO [27/300] BZ=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:19 INFO     ok (2268 bars) -> BZ_F_30m.csv
+12:44:19 INFO [28/300] BZ=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:20 INFO     ok (13549 bars) -> BZ_F_1h.csv
+12:44:20 INFO [29/300] BZ=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:20 INFO     ok (3686 bars) -> BZ_F_4h.csv
+12:44:20 INFO [30/300] BZ=F         weekly ...
+12:44:20 INFO     ok (523 bars) -> BZ_F_weekly.csv
+12:44:21 INFO [31/300] NG=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:21 INFO     ok (4538 bars) -> NG_F_15m.csv
+12:44:21 INFO [32/300] NG=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:21 INFO     ok (2270 bars) -> NG_F_30m.csv
+12:44:21 INFO [33/300] NG=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:22 INFO     ok (13360 bars) -> NG_F_1h.csv
+12:44:22 INFO [34/300] NG=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:22 INFO     ok (3637 bars) -> NG_F_4h.csv
+12:44:23 INFO [35/300] NG=F         weekly ...
+12:44:23 INFO     ok (523 bars) -> NG_F_weekly.csv
+12:44:23 INFO [36/300] HO=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:23 INFO     ok (4505 bars) -> HO_F_15m.csv
+12:44:23 INFO [37/300] HO=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:24 INFO     ok (2267 bars) -> HO_F_30m.csv
+12:44:24 INFO [38/300] HO=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:24 INFO     ok (13368 bars) -> HO_F_1h.csv
+12:44:24 INFO [39/300] HO=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:25 INFO     ok (3679 bars) -> HO_F_4h.csv
+12:44:25 INFO [40/300] HO=F         weekly ...
+12:44:25 INFO     ok (523 bars) -> HO_F_weekly.csv
+12:44:25 INFO [41/300] RB=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:25 INFO     ok (4498 bars) -> RB_F_15m.csv
+12:44:26 INFO [42/300] RB=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:26 INFO     ok (2263 bars) -> RB_F_30m.csv
+12:44:26 INFO [43/300] RB=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:26 INFO     ok (13327 bars) -> RB_F_1h.csv
+12:44:26 INFO [44/300] RB=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:27 INFO     ok (3671 bars) -> RB_F_4h.csv
+12:44:27 INFO [45/300] RB=F         weekly ...
+12:44:27 INFO     ok (523 bars) -> RB_F_weekly.csv
+12:44:27 INFO [46/300] ZC=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:27 INFO     ok (3493 bars) -> ZC_F_15m.csv
+12:44:28 INFO [47/300] ZC=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:28 INFO     ok (1772 bars) -> ZC_F_30m.csv
+12:44:28 INFO [48/300] ZC=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:28 INFO     ok (11177 bars) -> ZC_F_1h.csv
+12:44:29 INFO [49/300] ZC=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:29 INFO     ok (2954 bars) -> ZC_F_4h.csv
+12:44:29 INFO [50/300] ZC=F         weekly ...
+12:44:29 INFO     ok (523 bars) -> ZC_F_weekly.csv
+12:44:29 INFO [51/300] ZW=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:30 INFO     ok (3494 bars) -> ZW_F_15m.csv
+12:44:30 INFO [52/300] ZW=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:30 INFO     ok (1772 bars) -> ZW_F_30m.csv
+12:44:30 INFO [53/300] ZW=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:31 INFO     ok (11185 bars) -> ZW_F_1h.csv
+12:44:31 INFO [54/300] ZW=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:31 INFO     ok (2955 bars) -> ZW_F_4h.csv
+12:44:31 INFO [55/300] ZW=F         weekly ...
+12:44:31 INFO     ok (523 bars) -> ZW_F_weekly.csv
+12:44:32 INFO [56/300] ZS=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:32 INFO     ok (3493 bars) -> ZS_F_15m.csv
+12:44:32 INFO [57/300] ZS=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:32 INFO     ok (1772 bars) -> ZS_F_30m.csv
+12:44:32 INFO [58/300] ZS=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:33 INFO     ok (11188 bars) -> ZS_F_1h.csv
+12:44:33 INFO [59/300] ZS=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:33 INFO     ok (2956 bars) -> ZS_F_4h.csv
+12:44:33 INFO [60/300] ZS=F         weekly ...
+12:44:33 INFO     ok (523 bars) -> ZS_F_weekly.csv
+12:44:34 INFO [61/300] ZM=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:34 INFO     ok (3490 bars) -> ZM_F_15m.csv
+12:44:34 INFO [62/300] ZM=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:34 INFO     ok (1772 bars) -> ZM_F_30m.csv
+12:44:34 INFO [63/300] ZM=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:35 INFO     ok (11175 bars) -> ZM_F_1h.csv
+12:44:35 INFO [64/300] ZM=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:35 INFO     ok (2953 bars) -> ZM_F_4h.csv
+12:44:35 INFO [65/300] ZM=F         weekly ...
+12:44:35 INFO     ok (523 bars) -> ZM_F_weekly.csv
+12:44:36 INFO [66/300] ZL=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:36 INFO     ok (3493 bars) -> ZL_F_15m.csv
+12:44:36 INFO [67/300] ZL=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:36 INFO     ok (1772 bars) -> ZL_F_30m.csv
+12:44:36 INFO [68/300] ZL=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:37 INFO     ok (11170 bars) -> ZL_F_1h.csv
+12:44:37 INFO [69/300] ZL=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:37 INFO     ok (2953 bars) -> ZL_F_4h.csv
+12:44:37 INFO [70/300] ZL=F         weekly ...
+12:44:37 INFO     ok (523 bars) -> ZL_F_weekly.csv
+12:44:38 INFO [71/300] CT=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:38 WARNING     SKIP: insufficient bars (169 < 200)
+12:44:38 INFO [72/300] CT=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:38 INFO     ok (169 bars) -> CT_F_30m.csv
+12:44:38 INFO [73/300] CT=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:39 INFO     ok (7567 bars) -> CT_F_1h.csv
+12:44:39 INFO [74/300] CT=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:39 INFO     ok (2444 bars) -> CT_F_4h.csv
+12:44:39 INFO [75/300] CT=F         weekly ...
+12:44:39 INFO     ok (523 bars) -> CT_F_weekly.csv
+12:44:39 INFO [76/300] KC=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:40 INFO     ok (1769 bars) -> KC_F_15m.csv
+12:44:40 INFO [77/300] KC=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:40 INFO     ok (909 bars) -> KC_F_30m.csv
+12:44:40 INFO [78/300] KC=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:40 INFO     ok (5853 bars) -> KC_F_1h.csv
+12:44:41 INFO [79/300] KC=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:41 INFO     ok (1793 bars) -> KC_F_4h.csv
+12:44:41 INFO [80/300] KC=F         weekly ...
+12:44:41 INFO     ok (523 bars) -> KC_F_weekly.csv
+12:44:41 INFO [81/300] SB=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:42 INFO     ok (1865 bars) -> SB_F_15m.csv
+12:44:42 INFO [82/300] SB=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:42 INFO     ok (934 bars) -> SB_F_30m.csv
+12:44:42 INFO [83/300] SB=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:42 INFO     ok (5872 bars) -> SB_F_1h.csv
+12:44:43 INFO [84/300] SB=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:43 INFO     ok (2137 bars) -> SB_F_4h.csv
+12:44:43 INFO [85/300] SB=F         weekly ...
+12:44:43 INFO     ok (523 bars) -> SB_F_weekly.csv
+12:44:43 INFO [86/300] CC=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:44 INFO     ok (1695 bars) -> CC_F_15m.csv
+12:44:44 INFO [87/300] CC=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:44 INFO     ok (872 bars) -> CC_F_30m.csv
+12:44:44 INFO [88/300] CC=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:44 INFO     ok (5814 bars) -> CC_F_1h.csv
+12:44:45 INFO [89/300] CC=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:45 INFO     ok (1782 bars) -> CC_F_4h.csv
+12:44:45 INFO [90/300] CC=F         weekly ...
+12:44:45 INFO     ok (523 bars) -> CC_F_weekly.csv
+12:44:45 INFO [91/300] OJ=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:45 INFO     ok (1133 bars) -> OJ_F_15m.csv
+12:44:46 INFO [92/300] OJ=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:46 INFO     ok (579 bars) -> OJ_F_30m.csv
+12:44:46 INFO [93/300] OJ=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:46 INFO     ok (3318 bars) -> OJ_F_1h.csv
+12:44:46 INFO [94/300] OJ=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:47 INFO     ok (1123 bars) -> OJ_F_4h.csv
+12:44:47 INFO [95/300] OJ=F         weekly ...
+12:44:47 INFO     ok (523 bars) -> OJ_F_weekly.csv
+12:44:47 INFO [96/300] LE=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:47 INFO     ok (930 bars) -> LE_F_15m.csv
+12:44:48 INFO [97/300] LE=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:48 INFO     ok (490 bars) -> LE_F_30m.csv
+12:44:48 INFO [98/300] LE=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:48 INFO     ok (3593 bars) -> LE_F_1h.csv
+12:44:48 INFO [99/300] LE=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:49 INFO     ok (1202 bars) -> LE_F_4h.csv
+12:44:49 INFO [100/300] LE=F         weekly ...
+12:44:49 INFO     ok (523 bars) -> LE_F_weekly.csv
+12:44:49 INFO [101/300] GF=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:49 INFO     ok (931 bars) -> GF_F_15m.csv
+12:44:50 INFO [102/300] GF=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:50 INFO     ok (490 bars) -> GF_F_30m.csv
+12:44:50 INFO [103/300] GF=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:50 INFO     ok (3576 bars) -> GF_F_1h.csv
+12:44:50 INFO [104/300] GF=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:51 INFO     ok (1202 bars) -> GF_F_4h.csv
+12:44:51 INFO [105/300] GF=F         weekly ...
+12:44:51 INFO     ok (523 bars) -> GF_F_weekly.csv
+12:44:51 INFO [106/300] HE=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:51 INFO     ok (931 bars) -> HE_F_15m.csv
+12:44:51 INFO [107/300] HE=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:52 INFO     ok (490 bars) -> HE_F_30m.csv
+12:44:52 INFO [108/300] HE=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:52 INFO     ok (3591 bars) -> HE_F_1h.csv
+12:44:52 INFO [109/300] HE=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:52 INFO     ok (1202 bars) -> HE_F_4h.csv
+12:44:53 INFO [110/300] HE=F         weekly ...
+12:44:53 INFO     ok (523 bars) -> HE_F_weekly.csv
+12:44:53 INFO [111/300] LBS=F        15m    ...
+12:44:53 ERROR 
+1 Failed download:
+12:44:53 ERROR ['LBS=F']: YFPricesMissingError('possibly delisted; no price data found  (period=60d)')
+12:44:53 WARNING     SKIP: empty/normalized to empty
+12:44:53 INFO [112/300] LBS=F        30m    ...
+12:44:53 ERROR 
+1 Failed download:
+12:44:53 ERROR ['LBS=F']: YFPricesMissingError('possibly delisted; no price data found  (period=60d)')
+12:44:53 WARNING     SKIP: empty/normalized to empty
+12:44:53 INFO [113/300] LBS=F        1h     ...
+12:44:53 ERROR 
+1 Failed download:
+12:44:53 ERROR ['LBS=F']: YFPricesMissingError('possibly delisted; no price data found  (period=730d)')
+12:44:53 WARNING     SKIP: empty/normalized to empty
+12:44:54 INFO [114/300] LBS=F        4h     ...
+12:44:54 ERROR 
+1 Failed download:
+12:44:54 ERROR ['LBS=F']: YFPricesMissingError('possibly delisted; no price data found  (period=730d)')
+12:44:54 WARNING     SKIP: 1h source empty
+12:44:54 INFO [115/300] LBS=F        weekly ...
+12:44:54 INFO     ok (360 bars) -> LBS_F_weekly.csv
+12:44:54 INFO [116/300] GC=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:54 INFO     ok (4539 bars) -> GC_F_15m.csv
+12:44:55 INFO [117/300] GC=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:55 INFO     ok (2270 bars) -> GC_F_30m.csv
+12:44:55 INFO [118/300] GC=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:55 INFO     ok (13748 bars) -> GC_F_1h.csv
+12:44:56 INFO [119/300] GC=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:56 INFO     ok (3723 bars) -> GC_F_4h.csv
+12:44:56 INFO [120/300] GC=F         weekly ...
+12:44:56 INFO     ok (523 bars) -> GC_F_weekly.csv
+12:44:56 INFO [121/300] SI=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:57 INFO     ok (4538 bars) -> SI_F_15m.csv
+12:44:57 INFO [122/300] SI=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:57 INFO     ok (2270 bars) -> SI_F_30m.csv
+12:44:57 INFO [123/300] SI=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:58 INFO     ok (13746 bars) -> SI_F_1h.csv
+12:44:58 INFO [124/300] SI=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:44:58 INFO     ok (3723 bars) -> SI_F_4h.csv
+12:44:58 INFO [125/300] SI=F         weekly ...
+12:44:58 INFO     ok (523 bars) -> SI_F_weekly.csv
+12:44:59 INFO [126/300] HG=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:59 INFO     ok (4539 bars) -> HG_F_15m.csv
+12:44:59 INFO [127/300] HG=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:44:59 INFO     ok (2270 bars) -> HG_F_30m.csv
+12:44:59 INFO [128/300] HG=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:00 INFO     ok (13744 bars) -> HG_F_1h.csv
+12:45:00 INFO [129/300] HG=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:00 INFO     ok (3723 bars) -> HG_F_4h.csv
+12:45:00 INFO [130/300] HG=F         weekly ...
+12:45:01 INFO     ok (523 bars) -> HG_F_weekly.csv
+12:45:01 INFO [131/300] PL=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:01 INFO     ok (4538 bars) -> PL_F_15m.csv
+12:45:01 INFO [132/300] PL=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:01 INFO     ok (2270 bars) -> PL_F_30m.csv
+12:45:02 INFO [133/300] PL=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:02 INFO     ok (13729 bars) -> PL_F_1h.csv
+12:45:02 INFO [134/300] PL=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:03 INFO     ok (3719 bars) -> PL_F_4h.csv
+12:45:03 INFO [135/300] PL=F         weekly ...
+12:45:03 INFO     ok (523 bars) -> PL_F_weekly.csv
+12:45:03 INFO [136/300] PA=F         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:03 INFO     ok (4437 bars) -> PA_F_15m.csv
+12:45:03 INFO [137/300] PA=F         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:04 INFO     ok (2261 bars) -> PA_F_30m.csv
+12:45:04 INFO [138/300] PA=F         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:04 INFO     ok (13706 bars) -> PA_F_1h.csv
+12:45:04 INFO [139/300] PA=F         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:05 INFO     ok (3719 bars) -> PA_F_4h.csv
+12:45:05 INFO [140/300] PA=F         weekly ...
+12:45:05 INFO     ok (523 bars) -> PA_F_weekly.csv
+12:45:05 INFO [141/300] ^XAU         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:05 INFO     ok (1560 bars) -> _XAU_15m.csv
+12:45:05 INFO [142/300] ^XAU         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:06 INFO     ok (780 bars) -> _XAU_30m.csv
+12:45:06 INFO [143/300] ^XAU         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:06 INFO     ok (5082 bars) -> _XAU_1h.csv
+12:45:06 INFO [144/300] ^XAU         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:06 INFO     ok (1707 bars) -> _XAU_4h.csv
+12:45:07 INFO [145/300] ^XAU         weekly ...
+12:45:07 INFO     ok (523 bars) -> _XAU_weekly.csv
+12:45:07 INFO [146/300] EURUSD=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:07 INFO     ok (5609 bars) -> EURUSD_X_15m.csv
+12:45:07 INFO [147/300] EURUSD=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:08 INFO     ok (2805 bars) -> EURUSD_X_30m.csv
+12:45:08 INFO [148/300] EURUSD=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:08 INFO     ok (17256 bars) -> EURUSD_X_1h.csv
+12:45:08 INFO [149/300] EURUSD=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:09 INFO     ok (4441 bars) -> EURUSD_X_4h.csv
+12:45:09 INFO [150/300] EURUSD=X     weekly ...
+12:45:09 INFO     ok (523 bars) -> EURUSD_X_weekly.csv
+12:45:09 INFO [151/300] GBPUSD=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:09 INFO     ok (5609 bars) -> GBPUSD_X_15m.csv
+12:45:09 INFO [152/300] GBPUSD=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:10 INFO     ok (2805 bars) -> GBPUSD_X_30m.csv
+12:45:10 INFO [153/300] GBPUSD=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:10 INFO     ok (17257 bars) -> GBPUSD_X_1h.csv
+12:45:10 INFO [154/300] GBPUSD=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:11 INFO     ok (4441 bars) -> GBPUSD_X_4h.csv
+12:45:11 INFO [155/300] GBPUSD=X     weekly ...
+12:45:11 INFO     ok (523 bars) -> GBPUSD_X_weekly.csv
+12:45:12 INFO [156/300] USDJPY=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:12 INFO     ok (5591 bars) -> USDJPY_X_15m.csv
+12:45:12 INFO [157/300] USDJPY=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:12 INFO     ok (2797 bars) -> USDJPY_X_30m.csv
+12:45:12 INFO [158/300] USDJPY=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:13 INFO     ok (17143 bars) -> USDJPY_X_1h.csv
+12:45:13 INFO [159/300] USDJPY=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:13 INFO     ok (4435 bars) -> USDJPY_X_4h.csv
+12:45:13 INFO [160/300] USDJPY=X     weekly ...
+12:45:13 INFO     ok (523 bars) -> USDJPY_X_weekly.csv
+12:45:14 INFO [161/300] USDCHF=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:14 INFO     ok (5588 bars) -> USDCHF_X_15m.csv
+12:45:14 INFO [162/300] USDCHF=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:14 INFO     ok (2796 bars) -> USDCHF_X_30m.csv
+12:45:15 INFO [163/300] USDCHF=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:15 INFO     ok (17196 bars) -> USDCHF_X_1h.csv
+12:45:15 INFO [164/300] USDCHF=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:16 INFO     ok (4442 bars) -> USDCHF_X_4h.csv
+12:45:16 INFO [165/300] USDCHF=X     weekly ...
+12:45:16 INFO     ok (523 bars) -> USDCHF_X_weekly.csv
+12:45:16 INFO [166/300] AUDUSD=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:16 INFO     ok (5610 bars) -> AUDUSD_X_15m.csv
+12:45:17 INFO [167/300] AUDUSD=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:17 INFO     ok (2806 bars) -> AUDUSD_X_30m.csv
+12:45:17 INFO [168/300] AUDUSD=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:17 INFO     ok (17355 bars) -> AUDUSD_X_1h.csv
+12:45:18 INFO [169/300] AUDUSD=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:18 INFO     ok (4456 bars) -> AUDUSD_X_4h.csv
+12:45:18 INFO [170/300] AUDUSD=X     weekly ...
+12:45:18 INFO     ok (523 bars) -> AUDUSD_X_weekly.csv
+12:45:18 INFO [171/300] NZDUSD=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:19 INFO     ok (5613 bars) -> NZDUSD_X_15m.csv
+12:45:19 INFO [172/300] NZDUSD=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:19 INFO     ok (2808 bars) -> NZDUSD_X_30m.csv
+12:45:19 INFO [173/300] NZDUSD=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:20 INFO     ok (17347 bars) -> NZDUSD_X_1h.csv
+12:45:20 INFO [174/300] NZDUSD=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:20 INFO     ok (4455 bars) -> NZDUSD_X_4h.csv
+12:45:20 INFO [175/300] NZDUSD=X     weekly ...
+12:45:20 INFO     ok (523 bars) -> NZDUSD_X_weekly.csv
+12:45:21 INFO [176/300] USDCAD=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:21 INFO     ok (5603 bars) -> USDCAD_X_15m.csv
+12:45:21 INFO [177/300] USDCAD=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:21 INFO     ok (2809 bars) -> USDCAD_X_30m.csv
+12:45:21 INFO [178/300] USDCAD=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:22 INFO     ok (17360 bars) -> USDCAD_X_1h.csv
+12:45:22 INFO [179/300] USDCAD=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:23 INFO     ok (4456 bars) -> USDCAD_X_4h.csv
+12:45:23 INFO [180/300] USDCAD=X     weekly ...
+12:45:23 INFO     ok (523 bars) -> USDCAD_X_weekly.csv
+12:45:23 INFO [181/300] EURJPY=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:23 INFO     ok (5610 bars) -> EURJPY_X_15m.csv
+12:45:24 INFO [182/300] EURJPY=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:24 INFO     ok (2806 bars) -> EURJPY_X_30m.csv
+12:45:24 INFO [183/300] EURJPY=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:24 INFO     ok (17268 bars) -> EURJPY_X_1h.csv
+12:45:25 INFO [184/300] EURJPY=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:25 INFO     ok (4444 bars) -> EURJPY_X_4h.csv
+12:45:25 INFO [185/300] EURJPY=X     weekly ...
+12:45:25 INFO     ok (523 bars) -> EURJPY_X_weekly.csv
+12:45:25 INFO [186/300] GBPJPY=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:26 INFO     ok (5610 bars) -> GBPJPY_X_15m.csv
+12:45:26 INFO [187/300] GBPJPY=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:26 INFO     ok (2806 bars) -> GBPJPY_X_30m.csv
+12:45:26 INFO [188/300] GBPJPY=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:27 INFO     ok (17267 bars) -> GBPJPY_X_1h.csv
+12:45:27 INFO [189/300] GBPJPY=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:27 INFO     ok (4443 bars) -> GBPJPY_X_4h.csv
+12:45:27 INFO [190/300] GBPJPY=X     weekly ...
+12:45:28 INFO     ok (523 bars) -> GBPJPY_X_weekly.csv
+12:45:28 INFO [191/300] AUDJPY=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:28 INFO     ok (5609 bars) -> AUDJPY_X_15m.csv
+12:45:28 INFO [192/300] AUDJPY=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:28 INFO     ok (2805 bars) -> AUDJPY_X_30m.csv
+12:45:29 INFO [193/300] AUDJPY=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:29 INFO     ok (17268 bars) -> AUDJPY_X_1h.csv
+12:45:29 INFO [194/300] AUDJPY=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:30 INFO     ok (4444 bars) -> AUDJPY_X_4h.csv
+12:45:30 INFO [195/300] AUDJPY=X     weekly ...
+12:45:30 INFO     ok (523 bars) -> AUDJPY_X_weekly.csv
+12:45:30 INFO [196/300] CADJPY=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:30 INFO     ok (5611 bars) -> CADJPY_X_15m.csv
+12:45:30 INFO [197/300] CADJPY=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:31 INFO     ok (2807 bars) -> CADJPY_X_30m.csv
+12:45:31 INFO [198/300] CADJPY=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:31 INFO     ok (17271 bars) -> CADJPY_X_1h.csv
+12:45:32 INFO [199/300] CADJPY=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:32 INFO     ok (4443 bars) -> CADJPY_X_4h.csv
+12:45:32 INFO [200/300] CADJPY=X     weekly ...
+12:45:32 INFO     ok (523 bars) -> CADJPY_X_weekly.csv
+12:45:32 INFO [201/300] NZDJPY=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:33 INFO     ok (5609 bars) -> NZDJPY_X_15m.csv
+12:45:33 INFO [202/300] NZDJPY=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:33 INFO     ok (2805 bars) -> NZDJPY_X_30m.csv
+12:45:33 INFO [203/300] NZDJPY=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:34 INFO     ok (17263 bars) -> NZDJPY_X_1h.csv
+12:45:34 INFO [204/300] NZDJPY=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:34 INFO     ok (4443 bars) -> NZDJPY_X_4h.csv
+12:45:34 INFO [205/300] NZDJPY=X     weekly ...
+12:45:34 INFO     ok (523 bars) -> NZDJPY_X_weekly.csv
+12:45:35 INFO [206/300] CHFJPY=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:35 INFO     ok (5609 bars) -> CHFJPY_X_15m.csv
+12:45:35 INFO [207/300] CHFJPY=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:35 INFO     ok (2805 bars) -> CHFJPY_X_30m.csv
+12:45:35 INFO [208/300] CHFJPY=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:36 INFO     ok (17255 bars) -> CHFJPY_X_1h.csv
+12:45:36 INFO [209/300] CHFJPY=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:36 INFO     ok (4439 bars) -> CHFJPY_X_4h.csv
+12:45:37 INFO [210/300] CHFJPY=X     weekly ...
+12:45:37 INFO     ok (523 bars) -> CHFJPY_X_weekly.csv
+12:45:37 INFO [211/300] EURGBP=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:37 INFO     ok (5612 bars) -> EURGBP_X_15m.csv
+12:45:37 INFO [212/300] EURGBP=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:37 INFO     ok (2808 bars) -> EURGBP_X_30m.csv
+12:45:38 INFO [213/300] EURGBP=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:38 INFO     ok (17282 bars) -> EURGBP_X_1h.csv
+12:45:38 INFO [214/300] EURGBP=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:39 INFO     ok (4446 bars) -> EURGBP_X_4h.csv
+12:45:39 INFO [215/300] EURGBP=X     weekly ...
+12:45:39 INFO     ok (523 bars) -> EURGBP_X_weekly.csv
+12:45:39 INFO [216/300] EURCHF=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:39 INFO     ok (5609 bars) -> EURCHF_X_15m.csv
+12:45:40 INFO [217/300] EURCHF=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:40 INFO     ok (2805 bars) -> EURCHF_X_30m.csv
+12:45:40 INFO [218/300] EURCHF=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:41 INFO     ok (17267 bars) -> EURCHF_X_1h.csv
+12:45:41 INFO [219/300] EURCHF=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:41 INFO     ok (4442 bars) -> EURCHF_X_4h.csv
+12:45:41 INFO [220/300] EURCHF=X     weekly ...
+12:45:41 INFO     ok (523 bars) -> EURCHF_X_weekly.csv
+12:45:42 INFO [221/300] GBPCHF=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:42 INFO     ok (5609 bars) -> GBPCHF_X_15m.csv
+12:45:42 INFO [222/300] GBPCHF=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:42 INFO     ok (2805 bars) -> GBPCHF_X_30m.csv
+12:45:42 INFO [223/300] GBPCHF=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:43 INFO     ok (17264 bars) -> GBPCHF_X_1h.csv
+12:45:43 INFO [224/300] GBPCHF=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:44 INFO     ok (4442 bars) -> GBPCHF_X_4h.csv
+12:45:44 INFO [225/300] GBPCHF=X     weekly ...
+12:45:44 INFO     ok (523 bars) -> GBPCHF_X_weekly.csv
+12:45:44 INFO [226/300] EURCAD=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:44 INFO     ok (5610 bars) -> EURCAD_X_15m.csv
+12:45:45 INFO [227/300] EURCAD=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:45 INFO     ok (2806 bars) -> EURCAD_X_30m.csv
+12:45:45 INFO [228/300] EURCAD=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:45 INFO     ok (17283 bars) -> EURCAD_X_1h.csv
+12:45:46 INFO [229/300] EURCAD=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:46 INFO     ok (4445 bars) -> EURCAD_X_4h.csv
+12:45:46 INFO [230/300] EURCAD=X     weekly ...
+12:45:46 INFO     ok (523 bars) -> EURCAD_X_weekly.csv
+12:45:47 INFO [231/300] EURAUD=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:47 INFO     ok (5609 bars) -> EURAUD_X_15m.csv
+12:45:47 INFO [232/300] EURAUD=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:47 INFO     ok (2805 bars) -> EURAUD_X_30m.csv
+12:45:47 INFO [233/300] EURAUD=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:48 INFO     ok (17281 bars) -> EURAUD_X_1h.csv
+12:45:48 INFO [234/300] EURAUD=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:48 INFO     ok (4446 bars) -> EURAUD_X_4h.csv
+12:45:49 INFO [235/300] EURAUD=X     weekly ...
+12:45:49 INFO     ok (523 bars) -> EURAUD_X_weekly.csv
+12:45:49 INFO [236/300] EURNZD=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:49 INFO     ok (5610 bars) -> EURNZD_X_15m.csv
+12:45:49 INFO [237/300] EURNZD=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:50 INFO     ok (2806 bars) -> EURNZD_X_30m.csv
+12:45:50 INFO [238/300] EURNZD=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:50 INFO     ok (17274 bars) -> EURNZD_X_1h.csv
+12:45:51 INFO [239/300] EURNZD=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:51 INFO     ok (4445 bars) -> EURNZD_X_4h.csv
+12:45:51 INFO [240/300] EURNZD=X     weekly ...
+12:45:51 INFO     ok (523 bars) -> EURNZD_X_weekly.csv
+12:45:52 INFO [241/300] GBPAUD=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:52 INFO     ok (5609 bars) -> GBPAUD_X_15m.csv
+12:45:52 INFO [242/300] GBPAUD=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:52 INFO     ok (2805 bars) -> GBPAUD_X_30m.csv
+12:45:52 INFO [243/300] GBPAUD=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:53 INFO     ok (17343 bars) -> GBPAUD_X_1h.csv
+12:45:53 INFO [244/300] GBPAUD=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:53 INFO     ok (4456 bars) -> GBPAUD_X_4h.csv
+12:45:54 INFO [245/300] GBPAUD=X     weekly ...
+12:45:54 INFO     ok (523 bars) -> GBPAUD_X_weekly.csv
+12:45:54 INFO [246/300] GBPNZD=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:54 INFO     ok (5611 bars) -> GBPNZD_X_15m.csv
+12:45:54 INFO [247/300] GBPNZD=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:55 INFO     ok (2807 bars) -> GBPNZD_X_30m.csv
+12:45:55 INFO [248/300] GBPNZD=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:55 INFO     ok (17337 bars) -> GBPNZD_X_1h.csv
+12:45:55 INFO [249/300] GBPNZD=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:56 INFO     ok (4455 bars) -> GBPNZD_X_4h.csv
+12:45:56 INFO [250/300] GBPNZD=X     weekly ...
+12:45:56 INFO     ok (523 bars) -> GBPNZD_X_weekly.csv
+12:45:56 INFO [251/300] GBPCAD=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:57 INFO     ok (5611 bars) -> GBPCAD_X_15m.csv
+12:45:57 INFO [252/300] GBPCAD=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:57 INFO     ok (2807 bars) -> GBPCAD_X_30m.csv
+12:45:57 INFO [253/300] GBPCAD=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:58 INFO     ok (17347 bars) -> GBPCAD_X_1h.csv
+12:45:58 INFO [254/300] GBPCAD=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:45:58 INFO     ok (4456 bars) -> GBPCAD_X_4h.csv
+12:45:58 INFO [255/300] GBPCAD=X     weekly ...
+12:45:58 INFO     ok (523 bars) -> GBPCAD_X_weekly.csv
+12:45:59 INFO [256/300] AUDNZD=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:59 INFO     ok (5609 bars) -> AUDNZD_X_15m.csv
+12:45:59 INFO [257/300] AUDNZD=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:45:59 INFO     ok (2805 bars) -> AUDNZD_X_30m.csv
+12:45:59 INFO [258/300] AUDNZD=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:00 INFO     ok (17349 bars) -> AUDNZD_X_1h.csv
+12:46:00 INFO [259/300] AUDNZD=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:46:01 INFO     ok (4456 bars) -> AUDNZD_X_4h.csv
+12:46:01 INFO [260/300] AUDNZD=X     weekly ...
+12:46:01 INFO     ok (523 bars) -> AUDNZD_X_weekly.csv
+12:46:01 INFO [261/300] AUDCAD=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:01 INFO     ok (5609 bars) -> AUDCAD_X_15m.csv
+12:46:01 INFO [262/300] AUDCAD=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:02 INFO     ok (2805 bars) -> AUDCAD_X_30m.csv
+12:46:02 INFO [263/300] AUDCAD=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:02 INFO     ok (17352 bars) -> AUDCAD_X_1h.csv
+12:46:03 INFO [264/300] AUDCAD=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:46:03 INFO     ok (4456 bars) -> AUDCAD_X_4h.csv
+12:46:03 INFO [265/300] AUDCAD=X     weekly ...
+12:46:03 INFO     ok (523 bars) -> AUDCAD_X_weekly.csv
+12:46:03 INFO [266/300] AUDCHF=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:04 INFO     ok (5609 bars) -> AUDCHF_X_15m.csv
+12:46:04 INFO [267/300] AUDCHF=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:04 INFO     ok (2805 bars) -> AUDCHF_X_30m.csv
+12:46:04 INFO [268/300] AUDCHF=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:05 INFO     ok (17317 bars) -> AUDCHF_X_1h.csv
+12:46:05 INFO [269/300] AUDCHF=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:46:05 INFO     ok (4450 bars) -> AUDCHF_X_4h.csv
+12:46:06 INFO [270/300] AUDCHF=X     weekly ...
+12:46:06 INFO     ok (523 bars) -> AUDCHF_X_weekly.csv
+12:46:06 INFO [271/300] NZDCAD=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:06 INFO     ok (5610 bars) -> NZDCAD_X_15m.csv
+12:46:06 INFO [272/300] NZDCAD=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:06 INFO     ok (2806 bars) -> NZDCAD_X_30m.csv
+12:46:07 INFO [273/300] NZDCAD=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:07 INFO     ok (17343 bars) -> NZDCAD_X_1h.csv
+12:46:07 INFO [274/300] NZDCAD=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:46:08 INFO     ok (4455 bars) -> NZDCAD_X_4h.csv
+12:46:08 INFO [275/300] NZDCAD=X     weekly ...
+12:46:08 INFO     ok (523 bars) -> NZDCAD_X_weekly.csv
+12:46:08 INFO [276/300] NZDCHF=X     15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:09 INFO     ok (5609 bars) -> NZDCHF_X_15m.csv
+12:46:09 INFO [277/300] NZDCHF=X     30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:09 INFO     ok (2805 bars) -> NZDCHF_X_30m.csv
+12:46:09 INFO [278/300] NZDCHF=X     1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:10 INFO     ok (17335 bars) -> NZDCHF_X_1h.csv
+12:46:10 INFO [279/300] NZDCHF=X     4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:46:10 INFO     ok (4453 bars) -> NZDCHF_X_4h.csv
+12:46:10 INFO [280/300] NZDCHF=X     weekly ...
+12:46:10 INFO     ok (523 bars) -> NZDCHF_X_weekly.csv
+12:46:10 INFO [281/300] ^GSPC        15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:11 INFO     ok (1560 bars) -> _GSPC_15m.csv
+12:46:11 INFO [282/300] ^GSPC        30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:11 INFO     ok (780 bars) -> _GSPC_30m.csv
+12:46:11 INFO [283/300] ^GSPC        1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:11 INFO     ok (5082 bars) -> _GSPC_1h.csv
+12:46:12 INFO [284/300] ^GSPC        4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:46:12 INFO     ok (1707 bars) -> _GSPC_4h.csv
+12:46:12 INFO [285/300] ^GSPC        weekly ...
+12:46:12 INFO     ok (523 bars) -> _GSPC_weekly.csv
+12:46:12 INFO [286/300] ^IXIC        15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:13 INFO     ok (1560 bars) -> _IXIC_15m.csv
+12:46:13 INFO [287/300] ^IXIC        30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:13 INFO     ok (780 bars) -> _IXIC_30m.csv
+12:46:13 INFO [288/300] ^IXIC        1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:13 INFO     ok (5082 bars) -> _IXIC_1h.csv
+12:46:14 INFO [289/300] ^IXIC        4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:46:14 INFO     ok (1707 bars) -> _IXIC_4h.csv
+12:46:14 INFO [290/300] ^IXIC        weekly ...
+12:46:14 INFO     ok (523 bars) -> _IXIC_weekly.csv
+12:46:14 INFO [291/300] ^DJI         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:14 INFO     ok (1560 bars) -> _DJI_15m.csv
+12:46:15 INFO [292/300] ^DJI         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:15 INFO     ok (780 bars) -> _DJI_30m.csv
+12:46:15 INFO [293/300] ^DJI         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:15 INFO     ok (5082 bars) -> _DJI_1h.csv
+12:46:15 INFO [294/300] ^DJI         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:46:16 INFO     ok (1707 bars) -> _DJI_4h.csv
+12:46:16 INFO [295/300] ^DJI         weekly ...
+12:46:16 INFO     ok (523 bars) -> _DJI_weekly.csv
+12:46:16 INFO [296/300] ^RUT         15m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:16 INFO     ok (1560 bars) -> _RUT_15m.csv
+12:46:16 INFO [297/300] ^RUT         30m    ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:17 INFO     ok (780 bars) -> _RUT_30m.csv
+12:46:17 INFO [298/300] ^RUT         1h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+12:46:17 INFO     ok (5081 bars) -> _RUT_1h.csv
+12:46:17 INFO [299/300] ^RUT         4h     ...
+/Users/paul/att-strategy/.venv/lib/python3.14/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+/Users/paul/att-strategy/scripts/fetch_multi_tf.py:166: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  out = df.resample("4H").agg(agg)
+12:46:18 INFO     ok (1707 bars) -> _RUT_4h.csv
+12:46:18 INFO [300/300] ^RUT         weekly ...
+12:46:18 INFO     ok (523 bars) -> _RUT_weekly.csv
+12:46:18 INFO Done: 295/300 (symbol,tf) pairs fetched.
+
+============================================================
+Multi-timeframe fetch summary
+============================================================
+  15m     ok= 58/60  min_bars=200
+  30m     ok= 59/60  min_bars=100
+  1h      ok= 59/60  min_bars=200
+  4h      ok= 59/60  min_bars=100
+  weekly  ok= 60/60  min_bars=100
+
+Failures (logged):
+  CT=F         15m     -> insufficient bars (169 < 200)
+  LBS=F        15m     -> empty/normalized to empty
+  LBS=F        30m     -> empty/normalized to empty
+  LBS=F        1h      -> empty/normalized to empty
+  LBS=F        4h      -> 1h source empty
+12:46:18 INFO Wrote fetch report to results/multi_tf/fetch_report.json

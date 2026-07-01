@@ -1,0 +1,408 @@
+{
+  "params": {
+    "adx_len": 20,
+    "atr_len": 14,
+    "ema_len": 100,
+    "rsi_len": 2,
+    "dmi_len": 20,
+    "st_atr_len": 14,
+    "st_mult": 2.0,
+    "adx_trend": 30.0,
+    "adx_range": 20.0,
+    "bbwpct_min": 0.05,
+    "rsi_oversold": 10,
+    "rsi_overbought": 85,
+    "sma_trend_len": 200,
+    "mr_trail_mult": 2.0,
+    "risk_pct": 1.0,
+    "trail_mult": 1.5,
+    "max_bars_in_trade": 30,
+    "dead_money_pct": 0.25
+  },
+  "metrics": {
+    "n_symbols_evaluated": 46,
+    "mean_oos_sharpe": 0.13751195092680757,
+    "median_oos_sharpe": 0.11470803980193292,
+    "mean_oos_total_return": 0.007102997084571076,
+    "mean_oos_max_dd_pct": -1.946493146785986,
+    "pct_symbols_positive_oos": 0.6086956521739131,
+    "pct_symbols_positive_return": 0.6304347826086957,
+    "pct_symbols_low_dd": 1.0,
+    "robustness_score": 0.3222686223018466
+  },
+  "filters": {
+    "min_pct_pos_oos": 0.6,
+    "min_pct_low_dd": 0.7,
+    "min_pct_pos_return": 0.55
+  },
+  "per_symbol": [
+    {
+      "symbol": "ZC_F_4h",
+      "mean_oos_sharpe": 1.4285952471172072,
+      "mean_oos_total_return": 0.031230753432289426,
+      "mean_oos_max_dd_pct": -1.071540986350742,
+      "sum_oos_n_trades": 14,
+      "pct_oos_positive": 0.75
+    },
+    {
+      "symbol": "RB_F_4h",
+      "mean_oos_sharpe": 1.3890495402359804,
+      "mean_oos_total_return": 0.04614074134082785,
+      "mean_oos_max_dd_pct": -1.178681262368351,
+      "sum_oos_n_trades": 15,
+      "pct_oos_positive": 0.75
+    },
+    {
+      "symbol": "CL_F_4h",
+      "mean_oos_sharpe": 1.0770825662697958,
+      "mean_oos_total_return": 0.022937373838385566,
+      "mean_oos_max_dd_pct": -1.2943518521372916,
+      "sum_oos_n_trades": 13,
+      "pct_oos_positive": 0.75
+    },
+    {
+      "symbol": "GC_F_4h",
+      "mean_oos_sharpe": 1.0644479764695796,
+      "mean_oos_total_return": 0.0189515969635579,
+      "mean_oos_max_dd_pct": -0.4096168597285072,
+      "sum_oos_n_trades": 6,
+      "pct_oos_positive": 0.75
+    },
+    {
+      "symbol": "NG_F_4h",
+      "mean_oos_sharpe": 1.0510860912212163,
+      "mean_oos_total_return": 0.024603984716982132,
+      "mean_oos_max_dd_pct": -1.1383263272112865,
+      "sum_oos_n_trades": 14,
+      "pct_oos_positive": 1.0
+    },
+    {
+      "symbol": "ZM_F_4h",
+      "mean_oos_sharpe": 0.8106254002179463,
+      "mean_oos_total_return": 0.012471962979071804,
+      "mean_oos_max_dd_pct": -1.2643002451941618,
+      "sum_oos_n_trades": 14,
+      "pct_oos_positive": 1.0
+    },
+    {
+      "symbol": "EURJPY_X_4h",
+      "mean_oos_sharpe": 0.7498837436207566,
+      "mean_oos_total_return": 0.029877482012049268,
+      "mean_oos_max_dd_pct": -2.4897349348582227,
+      "sum_oos_n_trades": 20,
+      "pct_oos_positive": 0.75
+    },
+    {
+      "symbol": "_RUT_4h",
+      "mean_oos_sharpe": 0.688276956082226,
+      "mean_oos_total_return": 0.00755794136885006,
+      "mean_oos_max_dd_pct": -0.4723650283118258,
+      "sum_oos_n_trades": 6,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "HO_F_4h",
+      "mean_oos_sharpe": 0.6822441764665269,
+      "mean_oos_total_return": 0.019092793320294368,
+      "mean_oos_max_dd_pct": -1.4604904095684281,
+      "sum_oos_n_trades": 17,
+      "pct_oos_positive": 0.75
+    },
+    {
+      "symbol": "ZS_F_4h",
+      "mean_oos_sharpe": 0.6511568213502004,
+      "mean_oos_total_return": 0.016977241539318948,
+      "mean_oos_max_dd_pct": -1.3235844506708785,
+      "sum_oos_n_trades": 14,
+      "pct_oos_positive": 0.75
+    },
+    {
+      "symbol": "EURUSD_X_4h",
+      "mean_oos_sharpe": 0.6479222314193732,
+      "mean_oos_total_return": 0.036297579658886844,
+      "mean_oos_max_dd_pct": -2.059447931210079,
+      "sum_oos_n_trades": 25,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "EURAUD_X_4h",
+      "mean_oos_sharpe": 0.5528343447547318,
+      "mean_oos_total_return": 0.01446985168941901,
+      "mean_oos_max_dd_pct": -2.567686943635552,
+      "sum_oos_n_trades": 17,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "PL_F_4h",
+      "mean_oos_sharpe": 0.5478871936600305,
+      "mean_oos_total_return": 0.019082360547341158,
+      "mean_oos_max_dd_pct": -1.2460512971744855,
+      "sum_oos_n_trades": 19,
+      "pct_oos_positive": 0.75
+    },
+    {
+      "symbol": "GBPUSD_X_4h",
+      "mean_oos_sharpe": 0.465529410152535,
+      "mean_oos_total_return": 0.032671457542039796,
+      "mean_oos_max_dd_pct": -2.7018431319176788,
+      "sum_oos_n_trades": 25,
+      "pct_oos_positive": 0.75
+    },
+    {
+      "symbol": "HG_F_4h",
+      "mean_oos_sharpe": 0.34216539511350685,
+      "mean_oos_total_return": 0.01665746700998816,
+      "mean_oos_max_dd_pct": -1.8132714254952575,
+      "sum_oos_n_trades": 16,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "PA_F_4h",
+      "mean_oos_sharpe": 0.3271276471299833,
+      "mean_oos_total_return": 0.008372520924335412,
+      "mean_oos_max_dd_pct": -1.148018258365646,
+      "sum_oos_n_trades": 14,
+      "pct_oos_positive": 0.75
+    },
+    {
+      "symbol": "SI_F_4h",
+      "mean_oos_sharpe": 0.29963994154318496,
+      "mean_oos_total_return": 0.023927757144279985,
+      "mean_oos_max_dd_pct": -1.631348562757496,
+      "sum_oos_n_trades": 12,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "ZW_F_4h",
+      "mean_oos_sharpe": 0.29865521692282315,
+      "mean_oos_total_return": 0.014781485457977896,
+      "mean_oos_max_dd_pct": -1.21891340014426,
+      "sum_oos_n_trades": 11,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "EURCHF_X_4h",
+      "mean_oos_sharpe": 0.25147966431307794,
+      "mean_oos_total_return": 0.006469926079731021,
+      "mean_oos_max_dd_pct": -1.6912711133167206,
+      "sum_oos_n_trades": 18,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "USDJPY_X_4h",
+      "mean_oos_sharpe": 0.22126657126459165,
+      "mean_oos_total_return": 0.011474716435778236,
+      "mean_oos_max_dd_pct": -2.7716748572247245,
+      "sum_oos_n_trades": 18,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "NZDUSD_X_4h",
+      "mean_oos_sharpe": 0.20980554904689844,
+      "mean_oos_total_return": 0.008208167579481004,
+      "mean_oos_max_dd_pct": -2.0173368631426323,
+      "sum_oos_n_trades": 15,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "SB_F_4h",
+      "mean_oos_sharpe": 0.17534319786992159,
+      "mean_oos_total_return": 0.004499109942914265,
+      "mean_oos_max_dd_pct": -0.7091579584297174,
+      "sum_oos_n_trades": 6,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "USDCAD_X_4h",
+      "mean_oos_sharpe": 0.13745980262684135,
+      "mean_oos_total_return": 0.007155067893273872,
+      "mean_oos_max_dd_pct": -2.6321716304250273,
+      "sum_oos_n_trades": 19,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "CHFJPY_X_4h",
+      "mean_oos_sharpe": 0.09195627697702449,
+      "mean_oos_total_return": 0.006238895712743487,
+      "mean_oos_max_dd_pct": -2.678244625421695,
+      "sum_oos_n_trades": 22,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "AUDCAD_X_4h",
+      "mean_oos_sharpe": 0.06463377327686504,
+      "mean_oos_total_return": 0.0042948683095489736,
+      "mean_oos_max_dd_pct": -1.498861581755042,
+      "sum_oos_n_trades": 13,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "GBPCHF_X_4h",
+      "mean_oos_sharpe": 0.03980360329122745,
+      "mean_oos_total_return": 0.007350858786736035,
+      "mean_oos_max_dd_pct": -1.2993177182020048,
+      "sum_oos_n_trades": 11,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "BZ_F_4h",
+      "mean_oos_sharpe": 0.03492110763099815,
+      "mean_oos_total_return": 0.005973885787196923,
+      "mean_oos_max_dd_pct": -1.1507284316993858,
+      "sum_oos_n_trades": 9,
+      "pct_oos_positive": 0.25
+    },
+    {
+      "symbol": "GBPAUD_X_4h",
+      "mean_oos_sharpe": 0.03399397071464083,
+      "mean_oos_total_return": 0.007225644471904798,
+      "mean_oos_max_dd_pct": -2.0994459704037727,
+      "sum_oos_n_trades": 16,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "CADJPY_X_4h",
+      "mean_oos_sharpe": -0.027484677526456062,
+      "mean_oos_total_return": 0.0021831352843104915,
+      "mean_oos_max_dd_pct": -2.8282692628599215,
+      "sum_oos_n_trades": 18,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "EURNZD_X_4h",
+      "mean_oos_sharpe": -0.1445451744413569,
+      "mean_oos_total_return": -0.002619034632793773,
+      "mean_oos_max_dd_pct": -2.6661531646600034,
+      "sum_oos_n_trades": 20,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "NZDCAD_X_4h",
+      "mean_oos_sharpe": -0.1884136812501498,
+      "mean_oos_total_return": -0.004469355554368712,
+      "mean_oos_max_dd_pct": -3.22582491833461,
+      "sum_oos_n_trades": 25,
+      "pct_oos_positive": 0.25
+    },
+    {
+      "symbol": "AUDUSD_X_4h",
+      "mean_oos_sharpe": -0.24123607684838758,
+      "mean_oos_total_return": -0.0013530330792115835,
+      "mean_oos_max_dd_pct": -2.6714242507383137,
+      "sum_oos_n_trades": 20,
+      "pct_oos_positive": 0.25
+    },
+    {
+      "symbol": "GBPJPY_X_4h",
+      "mean_oos_sharpe": -0.24865109373764221,
+      "mean_oos_total_return": -0.004591689951846139,
+      "mean_oos_max_dd_pct": -3.0170224748855725,
+      "sum_oos_n_trades": 19,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "ES_F_4h",
+      "mean_oos_sharpe": -0.2523771946662483,
+      "mean_oos_total_return": -0.002500036362075843,
+      "mean_oos_max_dd_pct": -1.7142621868331842,
+      "sum_oos_n_trades": 16,
+      "pct_oos_positive": 0.25
+    },
+    {
+      "symbol": "AUDCHF_X_4h",
+      "mean_oos_sharpe": -0.2642932595262804,
+      "mean_oos_total_return": -0.005745048236356206,
+      "mean_oos_max_dd_pct": -2.1135898355948406,
+      "sum_oos_n_trades": 19,
+      "pct_oos_positive": 0.25
+    },
+    {
+      "symbol": "GBPNZD_X_4h",
+      "mean_oos_sharpe": -0.3452867376665346,
+      "mean_oos_total_return": -0.00029624573699779796,
+      "mean_oos_max_dd_pct": -2.159427313823297,
+      "sum_oos_n_trades": 15,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "AUDJPY_X_4h",
+      "mean_oos_sharpe": -0.35103957746018144,
+      "mean_oos_total_return": -0.00968661808741449,
+      "mean_oos_max_dd_pct": -2.96144827329156,
+      "sum_oos_n_trades": 21,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "CT_F_4h",
+      "mean_oos_sharpe": -0.3834296848453148,
+      "mean_oos_total_return": -0.006940591338099102,
+      "mean_oos_max_dd_pct": -1.596634611447687,
+      "sum_oos_n_trades": 13,
+      "pct_oos_positive": 0.25
+    },
+    {
+      "symbol": "ZL_F_4h",
+      "mean_oos_sharpe": -0.4118987072129336,
+      "mean_oos_total_return": -0.003354549054472955,
+      "mean_oos_max_dd_pct": -0.7617106578441084,
+      "sum_oos_n_trades": 6,
+      "pct_oos_positive": 0.25
+    },
+    {
+      "symbol": "GBPCAD_X_4h",
+      "mean_oos_sharpe": -0.4337510955460882,
+      "mean_oos_total_return": -0.004478913667295182,
+      "mean_oos_max_dd_pct": -2.5565205970705702,
+      "sum_oos_n_trades": 14,
+      "pct_oos_positive": 0.25
+    },
+    {
+      "symbol": "USDCHF_X_4h",
+      "mean_oos_sharpe": -0.4578588292926855,
+      "mean_oos_total_return": -0.00781730743609169,
+      "mean_oos_max_dd_pct": -3.0213650160056966,
+      "sum_oos_n_trades": 24,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "NZDJPY_X_4h",
+      "mean_oos_sharpe": -0.47834349580897684,
+      "mean_oos_total_return": -0.011672153013515435,
+      "mean_oos_max_dd_pct": -2.6913037710651935,
+      "sum_oos_n_trades": 18,
+      "pct_oos_positive": 0.0
+    },
+    {
+      "symbol": "RTY_F_4h",
+      "mean_oos_sharpe": -0.6026837245979572,
+      "mean_oos_total_return": -0.0104161071279083,
+      "mean_oos_max_dd_pct": -2.690973305418924,
+      "sum_oos_n_trades": 18,
+      "pct_oos_positive": 0.25
+    },
+    {
+      "symbol": "AUDNZD_X_4h",
+      "mean_oos_sharpe": -0.8696461502052539,
+      "mean_oos_total_return": -0.01602214243400131,
+      "mean_oos_max_dd_pct": -1.8703533733086026,
+      "sum_oos_n_trades": 12,
+      "pct_oos_positive": 0.0
+    },
+    {
+      "symbol": "EURGBP_X_4h",
+      "mean_oos_sharpe": -1.0749386582796319,
+      "mean_oos_total_return": -0.026787180871388906,
+      "mean_oos_max_dd_pct": -3.0413429995878594,
+      "sum_oos_n_trades": 17,
+      "pct_oos_positive": 0.0
+    },
+    {
+      "symbol": "EURCAD_X_4h",
+      "mean_oos_sharpe": -1.2334458552144634,
+      "mean_oos_total_return": -0.021688755295407827,
+      "mean_oos_max_dd_pct": -2.913274682264559,
+      "sum_oos_n_trades": 23,
+      "pct_oos_positive": 0.0
+    }
+  ]
+}

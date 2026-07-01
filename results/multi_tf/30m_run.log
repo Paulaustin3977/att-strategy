@@ -1,0 +1,31 @@
+2026-07-01 13:26:02,558 [INFO] att.optimize_mtf_cli: ======================================================================
+2026-07-01 13:26:02,558 [INFO] att.optimize_mtf_cli: Starting TF: 30m
+2026-07-01 13:26:02,558 [INFO] att.optimize_mtf_cli: ======================================================================
+2026-07-01 13:26:02,559 [INFO] att.optimizer.mtf: ============================================================
+2026-07-01 13:26:02,559 [INFO] att.optimizer.mtf: [30m] PHASE 1 (n_phase1=60, n_jobs=3)
+2026-07-01 13:26:02,559 [INFO] att.optimizer.mtf: ============================================================
+2026-07-01 13:26:02,559 [INFO] att.optimizer.mtf: [30m] Phase 1: sampling 60 combos (seed=42, symbols=59)
+2026-07-01 13:26:02,559 [INFO] att.optimizer.mtf: [30m] Phase 1: 60 unique combos
+2026-07-01 13:26:02,560 [INFO] att.optimizer.mtf: MTF 30m pool: 3 jobs, 3540 work items
+  [500/3540] 284 ok
+  [1000/3540] 596 ok
+  [1500/3540] 936 ok
+  [2000/3540] 1224 ok
+  [2500/3540] 1464 ok
+  [3000/3540] 1800 ok
+  [3500/3540] 1964 ok
+  [3540/3540] 1977 ok (done)
+2026-07-01 13:28:02,078 [INFO] att.optimizer.mtf: [30m] Phase 1 simulation wall-time: 119.5s, 1977 successful results
+[30m phase1] simulation wall-time: 119.5s, 1977 results
+2026-07-01 13:28:02,101 [INFO] att.optimizer.mtf: [30m] Phase 1 done in 119.5s — 60 unique combos
+2026-07-01 13:28:02,101 [INFO] att.optimizer.mtf: ============================================================
+2026-07-01 13:28:02,101 [INFO] att.optimizer.mtf: [30m] PHASE 2 (n_phase2 cap=200)
+2026-07-01 13:28:02,101 [INFO] att.optimizer.mtf: ============================================================
+2026-07-01 13:28:02,101 [INFO] att.optimizer.mtf: [30m] Phase 2: refining around top-15 combos, cap=200
+2026-07-01 13:28:02,102 [INFO] att.optimizer.mtf: [30m] Phase 2: 200 unique refined combos
+2026-07-01 13:28:02,102 [INFO] att.optimizer.mtf: MTF 30m pool: 3 jobs, 11800 work items
+  [500/11800] 205 ok
+  [1000/11800] 384 ok
+  [1500/11800] 655 ok
+  [2000/11800] 801 ok
+  [2500/11800] 965 ok

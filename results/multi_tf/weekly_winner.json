@@ -1,0 +1,96 @@
+{
+  "params": {
+    "adx_len": 10,
+    "atr_len": 20,
+    "ema_len": 100,
+    "rsi_len": 3,
+    "dmi_len": 10,
+    "st_atr_len": 14,
+    "st_mult": 4.0,
+    "adx_trend": 25.0,
+    "adx_range": 18.0,
+    "bbwpct_min": 0.2,
+    "rsi_oversold": 5,
+    "rsi_overbought": 85,
+    "sma_trend_len": 200,
+    "mr_trail_mult": 1.5,
+    "risk_pct": 1.0,
+    "trail_mult": 1.5,
+    "max_bars_in_trade": 20,
+    "dead_money_pct": 0.25
+  },
+  "metrics": {
+    "n_symbols_evaluated": 7,
+    "mean_oos_sharpe": 0.35652274140275286,
+    "median_oos_sharpe": 0.42493549907055433,
+    "mean_oos_total_return": 0.013530320625317746,
+    "mean_oos_max_dd_pct": -1.00457308550435,
+    "pct_symbols_positive_oos": 0.7142857142857143,
+    "pct_symbols_positive_return": 0.7142857142857143,
+    "pct_symbols_low_dd": 1.0,
+    "robustness_score": 0.5295487135903298
+  },
+  "filters": {
+    "min_pct_pos_oos": 0.6,
+    "min_pct_low_dd": 0.7,
+    "min_pct_pos_return": 0.55
+  },
+  "per_symbol": [
+    {
+      "symbol": "BZ_F_weekly",
+      "mean_oos_sharpe": 1.0885486892694376,
+      "mean_oos_total_return": 0.03189836771751821,
+      "mean_oos_max_dd_pct": -1.0485657619338764,
+      "sum_oos_n_trades": 5,
+      "pct_oos_positive": 0.75
+    },
+    {
+      "symbol": "HO_F_weekly",
+      "mean_oos_sharpe": 0.8256440547983728,
+      "mean_oos_total_return": 0.014652308861253096,
+      "mean_oos_max_dd_pct": -1.0686926783121273,
+      "sum_oos_n_trades": 5,
+      "pct_oos_positive": 0.75
+    },
+    {
+      "symbol": "ZC_F_weekly",
+      "mean_oos_sharpe": 0.5355641319823089,
+      "mean_oos_total_return": 0.0419171918916411,
+      "mean_oos_max_dd_pct": -1.1154287950807795,
+      "sum_oos_n_trades": 5,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "NZDJPY_X_weekly",
+      "mean_oos_sharpe": 0.42493549907055433,
+      "mean_oos_total_return": 0.010150742688778427,
+      "mean_oos_max_dd_pct": -0.8191152075686736,
+      "sum_oos_n_trades": 5,
+      "pct_oos_positive": 0.75
+    },
+    {
+      "symbol": "EURNZD_X_weekly",
+      "mean_oos_sharpe": 0.26835858491326314,
+      "mean_oos_total_return": 0.0050166746708227945,
+      "mean_oos_max_dd_pct": -0.8475492244323655,
+      "sum_oos_n_trades": 5,
+      "pct_oos_positive": 0.75
+    },
+    {
+      "symbol": "EURGBP_X_weekly",
+      "mean_oos_sharpe": -0.1814441330689932,
+      "mean_oos_total_return": -0.0035791442233529783,
+      "mean_oos_max_dd_pct": -1.1546875099804397,
+      "sum_oos_n_trades": 6,
+      "pct_oos_positive": 0.0
+    },
+    {
+      "symbol": "NZDCAD_X_weekly",
+      "mean_oos_sharpe": -0.4659476371456736,
+      "mean_oos_total_return": -0.005343897229436425,
+      "mean_oos_max_dd_pct": -0.9779724212221879,
+      "sum_oos_n_trades": 5,
+      "pct_oos_positive": 0.25
+    }
+  ]
+}

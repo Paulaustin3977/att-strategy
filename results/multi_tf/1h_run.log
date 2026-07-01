@@ -1,0 +1,62 @@
+2026-07-01 14:08:29,391 [INFO] att.optimize_mtf_cli: ======================================================================
+2026-07-01 14:08:29,391 [INFO] att.optimize_mtf_cli: Starting TF: 1h
+2026-07-01 14:08:29,391 [INFO] att.optimize_mtf_cli: ======================================================================
+2026-07-01 14:08:29,392 [INFO] att.optimizer.mtf: ============================================================
+2026-07-01 14:08:29,392 [INFO] att.optimizer.mtf: [1h] PHASE 1 (n_phase1=60, n_jobs=3)
+2026-07-01 14:08:29,392 [INFO] att.optimizer.mtf: ============================================================
+2026-07-01 14:08:29,392 [INFO] att.optimizer.mtf: [1h] Phase 1: sampling 60 combos (seed=42, symbols=59)
+2026-07-01 14:08:29,392 [INFO] att.optimizer.mtf: [1h] Phase 1: 60 unique combos
+2026-07-01 14:08:29,393 [INFO] att.optimizer.mtf: MTF 1h pool: 3 jobs, 3540 work items
+  [500/3540] 450 ok
+  [1000/3540] 949 ok
+  [1500/3540] 1441 ok
+  [2000/3540] 1929 ok
+  [2500/3540] 2410 ok
+  [3000/3540] 2910 ok
+  [3500/3540] 3292 ok
+  [3540/3540] 3331 ok (done)
+2026-07-01 14:20:12,397 [INFO] att.optimizer.mtf: [1h] Phase 1 simulation wall-time: 703.0s, 3331 successful results
+[1h phase1] simulation wall-time: 703.0s, 3331 results
+2026-07-01 14:20:12,433 [INFO] att.optimizer.mtf: [1h] Phase 1 done in 703.0s — 60 unique combos
+2026-07-01 14:20:12,433 [INFO] att.optimizer.mtf: ============================================================
+2026-07-01 14:20:12,433 [INFO] att.optimizer.mtf: [1h] PHASE 2 (n_phase2 cap=200)
+2026-07-01 14:20:12,433 [INFO] att.optimizer.mtf: ============================================================
+2026-07-01 14:20:12,433 [INFO] att.optimizer.mtf: [1h] Phase 2: refining around top-15 combos, cap=200
+2026-07-01 14:20:12,433 [INFO] att.optimizer.mtf: [1h] Phase 2: 200 unique refined combos
+2026-07-01 14:20:12,433 [INFO] att.optimizer.mtf: MTF 1h pool: 3 jobs, 11800 work items
+  [500/11800] 428 ok
+  [1000/11800] 928 ok
+  [1500/11800] 1401 ok
+  [2000/11800] 1805 ok
+  [2500/11800] 2304 ok
+  [3000/11800] 2804 ok
+  [3500/11800] 3289 ok
+  [4000/11800] 3789 ok
+  [4500/11800] 4289 ok
+  [5000/11800] 4740 ok
+  [5500/11800] 5239 ok
+  [6000/11800] 5739 ok
+  [6500/11800] 6237 ok
+  [7000/11800] 6735 ok
+  [7500/11800] 7137 ok
+  [8000/11800] 7575 ok
+  [8500/11800] 8057 ok
+  [9000/11800] 8557 ok
+  [9500/11800] 9057 ok
+  [10000/11800] 9557 ok
+  [10500/11800] 9736 ok
+  [11000/11800] 10133 ok
+  [11500/11800] 10534 ok
+  [11800/11800] 10834 ok (done)
+2026-07-01 14:59:19,564 [INFO] att.optimizer.mtf: [1h] Phase 2 simulation wall-time: 2347.1s, 10834 successful results
+[1h phase2] simulation wall-time: 2347.1s, 10834 results
+2026-07-01 14:59:19,664 [INFO] att.optimizer.mtf: [1h] Phase 2 done in 2347.2s — 200 unique combos
+2026-07-01 14:59:19,664 [INFO] att.optimizer.mtf: ============================================================
+2026-07-01 14:59:19,664 [INFO] att.optimizer.mtf: [1h] PHASE 3 — winner selection
+2026-07-01 14:59:19,664 [INFO] att.optimizer.mtf: ============================================================
+2026-07-01 14:59:19,664 [WARNING] att.optimizer.mtf: [1h] No combo passed filters; falling back to top-by-robustness
+2026-07-01 15:20:16,350 [INFO] att.optimizer.mtf: [1h] Wrote results/multi_tf/1h_robustness_report.md
+2026-07-01 15:20:16,352 [INFO] att.optimize_mtf_cli: [1h] DONE in 4307.0s — winner OK, mean_oos_sharpe=-0.3236379562131851, passes_filters=False
+
+TF       Win?   OOS Sharpe   %PosOOS  %LowDD   Filters 
+1h       OK     -0.324       7.5      100.0    FAIL    

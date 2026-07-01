@@ -1,0 +1,464 @@
+{
+  "params": {
+    "adx_len": 10,
+    "atr_len": 20,
+    "ema_len": 50,
+    "rsi_len": 3,
+    "dmi_len": 14,
+    "st_atr_len": 20,
+    "st_mult": 4.0,
+    "adx_trend": 20.0,
+    "adx_range": 15.0,
+    "bbwpct_min": 0.2,
+    "rsi_oversold": 5,
+    "rsi_overbought": 90,
+    "sma_trend_len": 200,
+    "mr_trail_mult": 1.5,
+    "risk_pct": 0.5,
+    "trail_mult": 2.0,
+    "max_bars_in_trade": 20,
+    "dead_money_pct": 1.0
+  },
+  "metrics": {
+    "n_symbols_evaluated": 53,
+    "mean_oos_sharpe": -0.3236379562131851,
+    "median_oos_sharpe": -0.3220967613784758,
+    "mean_oos_total_return": -0.004810826070076062,
+    "mean_oos_max_dd_pct": -1.309044921281018,
+    "pct_symbols_positive_oos": 0.07547169811320754,
+    "pct_symbols_positive_return": 0.2641509433962264,
+    "pct_symbols_low_dd": 1.0,
+    "robustness_score": -0.09743295427902358
+  },
+  "filters": {
+    "min_pct_pos_oos": 0.6,
+    "min_pct_low_dd": 0.7,
+    "min_pct_pos_return": 0.55
+  },
+  "per_symbol": [
+    {
+      "symbol": "ZL_F_1h",
+      "mean_oos_sharpe": 0.519338565891429,
+      "mean_oos_total_return": 0.01304899264678943,
+      "mean_oos_max_dd_pct": -0.9061028152444809,
+      "sum_oos_n_trades": 17,
+      "pct_oos_positive": 0.8333333333333334
+    },
+    {
+      "symbol": "PA_F_1h",
+      "mean_oos_sharpe": 0.29728652819654316,
+      "mean_oos_total_return": 0.00655357844195311,
+      "mean_oos_max_dd_pct": -0.7624920752181583,
+      "sum_oos_n_trades": 20,
+      "pct_oos_positive": 0.6666666666666666
+    },
+    {
+      "symbol": "_XAU_1h",
+      "mean_oos_sharpe": 0.2037435561400772,
+      "mean_oos_total_return": 0.003848282212120193,
+      "mean_oos_max_dd_pct": -0.6278472156682811,
+      "sum_oos_n_trades": 11,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "NG_F_1h",
+      "mean_oos_sharpe": 0.09205427717072275,
+      "mean_oos_total_return": 0.005689357317022647,
+      "mean_oos_max_dd_pct": -0.8485478253504753,
+      "sum_oos_n_trades": 17,
+      "pct_oos_positive": 0.6666666666666666
+    },
+    {
+      "symbol": "ZM_F_1h",
+      "mean_oos_sharpe": -0.01389755008839568,
+      "mean_oos_total_return": 0.0005740286200746291,
+      "mean_oos_max_dd_pct": -1.0300483394900508,
+      "sum_oos_n_trades": 22,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "RB_F_1h",
+      "mean_oos_sharpe": -0.047894182168902566,
+      "mean_oos_total_return": -0.0002895889141394342,
+      "mean_oos_max_dd_pct": -1.0028942203057787,
+      "sum_oos_n_trades": 19,
+      "pct_oos_positive": 0.6666666666666666
+    },
+    {
+      "symbol": "GC_F_1h",
+      "mean_oos_sharpe": -0.06416522040183553,
+      "mean_oos_total_return": 0.0013816789667279407,
+      "mean_oos_max_dd_pct": -1.0195450873106087,
+      "sum_oos_n_trades": 22,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "BZ_F_1h",
+      "mean_oos_sharpe": -0.06605425374290262,
+      "mean_oos_total_return": 0.0061312051136277355,
+      "mean_oos_max_dd_pct": -0.8754358861797171,
+      "sum_oos_n_trades": 20,
+      "pct_oos_positive": 0.16666666666666666
+    },
+    {
+      "symbol": "KC_F_1h",
+      "mean_oos_sharpe": -0.06955062448185766,
+      "mean_oos_total_return": -0.00021018437626938368,
+      "mean_oos_max_dd_pct": -0.4529373203901768,
+      "sum_oos_n_trades": 9,
+      "pct_oos_positive": 0.3333333333333333
+    },
+    {
+      "symbol": "NZDUSD_X_1h",
+      "mean_oos_sharpe": -0.08212179382368259,
+      "mean_oos_total_return": -0.0024705940079801925,
+      "mean_oos_max_dd_pct": -1.7641700944710144,
+      "sum_oos_n_trades": 35,
+      "pct_oos_positive": 0.3333333333333333
+    },
+    {
+      "symbol": "HO_F_1h",
+      "mean_oos_sharpe": -0.11346267631170566,
+      "mean_oos_total_return": 0.0026557221043312287,
+      "mean_oos_max_dd_pct": -1.084259892831381,
+      "sum_oos_n_trades": 18,
+      "pct_oos_positive": 0.6666666666666666
+    },
+    {
+      "symbol": "ES_F_1h",
+      "mean_oos_sharpe": -0.1432184528857277,
+      "mean_oos_total_return": -0.00111852202928006,
+      "mean_oos_max_dd_pct": -0.8919425007793502,
+      "sum_oos_n_trades": 19,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "ZW_F_1h",
+      "mean_oos_sharpe": -0.15617308242351044,
+      "mean_oos_total_return": -0.0019351191581027402,
+      "mean_oos_max_dd_pct": -1.1488569616343762,
+      "sum_oos_n_trades": 28,
+      "pct_oos_positive": 0.16666666666666666
+    },
+    {
+      "symbol": "CT_F_1h",
+      "mean_oos_sharpe": -0.15930010942471085,
+      "mean_oos_total_return": 0.007979753881237199,
+      "mean_oos_max_dd_pct": -0.9336565957705077,
+      "sum_oos_n_trades": 16,
+      "pct_oos_positive": 0.3333333333333333
+    },
+    {
+      "symbol": "SB_F_1h",
+      "mean_oos_sharpe": -0.17171453512770393,
+      "mean_oos_total_return": 1.1837566327175985e-05,
+      "mean_oos_max_dd_pct": -0.6396231755293992,
+      "sum_oos_n_trades": 9,
+      "pct_oos_positive": 0.3333333333333333
+    },
+    {
+      "symbol": "OJ_F_1h",
+      "mean_oos_sharpe": -0.17678305907643352,
+      "mean_oos_total_return": 0.00046339099111328334,
+      "mean_oos_max_dd_pct": -0.6100096242718811,
+      "sum_oos_n_trades": 9,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "GF_F_1h",
+      "mean_oos_sharpe": -0.17744582332715472,
+      "mean_oos_total_return": -0.0006982776965261716,
+      "mean_oos_max_dd_pct": -0.7030025324362672,
+      "sum_oos_n_trades": 10,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "SI_F_1h",
+      "mean_oos_sharpe": -0.1777191818998808,
+      "mean_oos_total_return": -0.001983978623116036,
+      "mean_oos_max_dd_pct": -1.20131386625591,
+      "sum_oos_n_trades": 23,
+      "pct_oos_positive": 0.3333333333333333
+    },
+    {
+      "symbol": "PL_F_1h",
+      "mean_oos_sharpe": -0.180799120116769,
+      "mean_oos_total_return": -0.0009148105657845309,
+      "mean_oos_max_dd_pct": -0.8165344326124809,
+      "sum_oos_n_trades": 24,
+      "pct_oos_positive": 0.3333333333333333
+    },
+    {
+      "symbol": "ZC_F_1h",
+      "mean_oos_sharpe": -0.18606722231136955,
+      "mean_oos_total_return": -0.0038415208016176618,
+      "mean_oos_max_dd_pct": -0.8165853106162699,
+      "sum_oos_n_trades": 21,
+      "pct_oos_positive": 0.3333333333333333
+    },
+    {
+      "symbol": "EURCAD_X_1h",
+      "mean_oos_sharpe": -0.20409351108418805,
+      "mean_oos_total_return": -0.005444576383623189,
+      "mean_oos_max_dd_pct": -1.5686513791334988,
+      "sum_oos_n_trades": 28,
+      "pct_oos_positive": 0.3333333333333333
+    },
+    {
+      "symbol": "NZDJPY_X_1h",
+      "mean_oos_sharpe": -0.22896797022061563,
+      "mean_oos_total_return": -0.002772989874550725,
+      "mean_oos_max_dd_pct": -1.4163832597038193,
+      "sum_oos_n_trades": 24,
+      "pct_oos_positive": 0.3333333333333333
+    },
+    {
+      "symbol": "AUDJPY_X_1h",
+      "mean_oos_sharpe": -0.2805309223509039,
+      "mean_oos_total_return": 0.000725590917850817,
+      "mean_oos_max_dd_pct": -1.1310960862927681,
+      "sum_oos_n_trades": 19,
+      "pct_oos_positive": 0.3333333333333333
+    },
+    {
+      "symbol": "RTY_F_1h",
+      "mean_oos_sharpe": -0.28601890215793074,
+      "mean_oos_total_return": -0.0027878371986929476,
+      "mean_oos_max_dd_pct": -0.7867175312673989,
+      "sum_oos_n_trades": 20,
+      "pct_oos_positive": 0.16666666666666666
+    },
+    {
+      "symbol": "LE_F_1h",
+      "mean_oos_sharpe": -0.2956688218493977,
+      "mean_oos_total_return": 0.000328048445390717,
+      "mean_oos_max_dd_pct": -0.6113830323952448,
+      "sum_oos_n_trades": 10,
+      "pct_oos_positive": 0.5
+    },
+    {
+      "symbol": "_RUT_1h",
+      "mean_oos_sharpe": -0.3153784368002224,
+      "mean_oos_total_return": 0.002106195112049772,
+      "mean_oos_max_dd_pct": -0.5963810498848249,
+      "sum_oos_n_trades": 9,
+      "pct_oos_positive": 0.3333333333333333
+    },
+    {
+      "symbol": "EURAUD_X_1h",
+      "mean_oos_sharpe": -0.3220967613784758,
+      "mean_oos_total_return": -0.0055232002275238294,
+      "mean_oos_max_dd_pct": -1.1998197133649504,
+      "sum_oos_n_trades": 19,
+      "pct_oos_positive": 0.3333333333333333
+    },
+    {
+      "symbol": "GBPCHF_X_1h",
+      "mean_oos_sharpe": -0.3792603277475021,
+      "mean_oos_total_return": -0.00690194279829017,
+      "mean_oos_max_dd_pct": -1.3000132351754514,
+      "sum_oos_n_trades": 25,
+      "pct_oos_positive": 0.16666666666666666
+    },
+    {
+      "symbol": "GBPJPY_X_1h",
+      "mean_oos_sharpe": -0.3935553837043739,
+      "mean_oos_total_return": -0.008154441708133103,
+      "mean_oos_max_dd_pct": -1.5322523863488657,
+      "sum_oos_n_trades": 23,
+      "pct_oos_positive": 0.16666666666666666
+    },
+    {
+      "symbol": "GBPAUD_X_1h",
+      "mean_oos_sharpe": -0.403458235099823,
+      "mean_oos_total_return": -0.009214075661406576,
+      "mean_oos_max_dd_pct": -1.667125255171525,
+      "sum_oos_n_trades": 26,
+      "pct_oos_positive": 0.16666666666666666
+    },
+    {
+      "symbol": "HE_F_1h",
+      "mean_oos_sharpe": -0.4040455390920092,
+      "mean_oos_total_return": -0.0010698959485444903,
+      "mean_oos_max_dd_pct": -0.685210430893045,
+      "sum_oos_n_trades": 9,
+      "pct_oos_positive": 0.3333333333333333
+    },
+    {
+      "symbol": "ZS_F_1h",
+      "mean_oos_sharpe": -0.42346812786549853,
+      "mean_oos_total_return": -0.003008998473531362,
+      "mean_oos_max_dd_pct": -0.9810254674270138,
+      "sum_oos_n_trades": 18,
+      "pct_oos_positive": 0.3333333333333333
+    },
+    {
+      "symbol": "CADJPY_X_1h",
+      "mean_oos_sharpe": -0.4268029030695389,
+      "mean_oos_total_return": -0.005126767807103655,
+      "mean_oos_max_dd_pct": -1.596684832070741,
+      "sum_oos_n_trades": 20,
+      "pct_oos_positive": 0.3333333333333333
+    },
+    {
+      "symbol": "AUDUSD_X_1h",
+      "mean_oos_sharpe": -0.42779527937309875,
+      "mean_oos_total_return": -0.013405430355179609,
+      "mean_oos_max_dd_pct": -1.688971572267156,
+      "sum_oos_n_trades": 32,
+      "pct_oos_positive": 0.16666666666666666
+    },
+    {
+      "symbol": "GBPUSD_X_1h",
+      "mean_oos_sharpe": -0.43932836077342335,
+      "mean_oos_total_return": -0.005646386665318914,
+      "mean_oos_max_dd_pct": -1.899153320553676,
+      "sum_oos_n_trades": 26,
+      "pct_oos_positive": 0.16666666666666666
+    },
+    {
+      "symbol": "GBPNZD_X_1h",
+      "mean_oos_sharpe": -0.43960125479620565,
+      "mean_oos_total_return": -0.00837872159378618,
+      "mean_oos_max_dd_pct": -1.3285018803862487,
+      "sum_oos_n_trades": 24,
+      "pct_oos_positive": 0.16666666666666666
+    },
+    {
+      "symbol": "HG_F_1h",
+      "mean_oos_sharpe": -0.46364505137751727,
+      "mean_oos_total_return": -0.007231649683776414,
+      "mean_oos_max_dd_pct": -1.431377354484436,
+      "sum_oos_n_trades": 23,
+      "pct_oos_positive": 0.16666666666666666
+    },
+    {
+      "symbol": "USDJPY_X_1h",
+      "mean_oos_sharpe": -0.47463914757569653,
+      "mean_oos_total_return": -0.01352655517633578,
+      "mean_oos_max_dd_pct": -2.4792684240276204,
+      "sum_oos_n_trades": 30,
+      "pct_oos_positive": 0.3333333333333333
+    },
+    {
+      "symbol": "CL_F_1h",
+      "mean_oos_sharpe": -0.4803210984721767,
+      "mean_oos_total_return": -0.004781583227776749,
+      "mean_oos_max_dd_pct": -0.9165609347400666,
+      "sum_oos_n_trades": 17,
+      "pct_oos_positive": 0.0
+    },
+    {
+      "symbol": "NZDCAD_X_1h",
+      "mean_oos_sharpe": -0.5097363348404912,
+      "mean_oos_total_return": -0.010051136889025777,
+      "mean_oos_max_dd_pct": -1.7775684514773953,
+      "sum_oos_n_trades": 26,
+      "pct_oos_positive": 0.16666666666666666
+    },
+    {
+      "symbol": "NZDCHF_X_1h",
+      "mean_oos_sharpe": -0.511288432481551,
+      "mean_oos_total_return": -0.0050545863236214844,
+      "mean_oos_max_dd_pct": -0.8345699829953684,
+      "sum_oos_n_trades": 13,
+      "pct_oos_positive": 0.16666666666666666
+    },
+    {
+      "symbol": "EURUSD_X_1h",
+      "mean_oos_sharpe": -0.5173778319253223,
+      "mean_oos_total_return": -0.015057376699521804,
+      "mean_oos_max_dd_pct": -2.679704674305214,
+      "sum_oos_n_trades": 34,
+      "pct_oos_positive": 0.16666666666666666
+    },
+    {
+      "symbol": "CHFJPY_X_1h",
+      "mean_oos_sharpe": -0.5336817047268626,
+      "mean_oos_total_return": -0.01072338097695856,
+      "mean_oos_max_dd_pct": -1.6347876581772622,
+      "sum_oos_n_trades": 25,
+      "pct_oos_positive": 0.0
+    },
+    {
+      "symbol": "AUDNZD_X_1h",
+      "mean_oos_sharpe": -0.5525837458472561,
+      "mean_oos_total_return": -0.008390831138628893,
+      "mean_oos_max_dd_pct": -1.2235479477215463,
+      "sum_oos_n_trades": 21,
+      "pct_oos_positive": 0.0
+    },
+    {
+      "symbol": "EURNZD_X_1h",
+      "mean_oos_sharpe": -0.5546187117606779,
+      "mean_oos_total_return": -0.016331681598300413,
+      "mean_oos_max_dd_pct": -2.2617200754447775,
+      "sum_oos_n_trades": 27,
+      "pct_oos_positive": 0.16666666666666666
+    },
+    {
+      "symbol": "USDCHF_X_1h",
+      "mean_oos_sharpe": -0.5950405497281852,
+      "mean_oos_total_return": -0.012370308249448743,
+      "mean_oos_max_dd_pct": -1.6020423701792474,
+      "sum_oos_n_trades": 25,
+      "pct_oos_positive": 0.0
+    },
+    {
+      "symbol": "USDCAD_X_1h",
+      "mean_oos_sharpe": -0.5974042200751208,
+      "mean_oos_total_return": -0.013657635660990401,
+      "mean_oos_max_dd_pct": -1.930476050252164,
+      "sum_oos_n_trades": 32,
+      "pct_oos_positive": 0.0
+    },
+    {
+      "symbol": "EURCHF_X_1h",
+      "mean_oos_sharpe": -0.6141277014174257,
+      "mean_oos_total_return": -0.012492722857508671,
+      "mean_oos_max_dd_pct": -1.9812252444962464,
+      "sum_oos_n_trades": 28,
+      "pct_oos_positive": 0.16666666666666666
+    },
+    {
+      "symbol": "AUDCAD_X_1h",
+      "mean_oos_sharpe": -0.6624555151079585,
+      "mean_oos_total_return": -0.011600235404677065,
+      "mean_oos_max_dd_pct": -1.6127431643219994,
+      "sum_oos_n_trades": 32,
+      "pct_oos_positive": 0.0
+    },
+    {
+      "symbol": "AUDCHF_X_1h",
+      "mean_oos_sharpe": -0.6924208117099746,
+      "mean_oos_total_return": -0.011056525253898325,
+      "mean_oos_max_dd_pct": -1.523944116119733,
+      "sum_oos_n_trades": 28,
+      "pct_oos_positive": 0.16666666666666666
+    },
+    {
+      "symbol": "EURJPY_X_1h",
+      "mean_oos_sharpe": -0.7520797894580488,
+      "mean_oos_total_return": -0.015619515481291637,
+      "mean_oos_max_dd_pct": -2.022066795375085,
+      "sum_oos_n_trades": 25,
+      "pct_oos_positive": 0.0
+    },
+    {
+      "symbol": "GBPCAD_X_1h",
+      "mean_oos_sharpe": -0.9569719702493235,
+      "mean_oos_total_return": -0.024974125804839695,
+      "mean_oos_max_dd_pct": -2.8898166383260655,
+      "sum_oos_n_trades": 34,
+      "pct_oos_positive": 0.0
+    },
+    {
+      "symbol": "EURGBP_X_1h",
+      "mean_oos_sharpe": -1.1404043649682445,
+      "mean_oos_total_return": -0.022653732755545813,
+      "mean_oos_max_dd_pct": -2.4527847407469237,
+      "sum_oos_n_trades": 25,
+      "pct_oos_positive": 0.0
+    }
+  ]
+}
