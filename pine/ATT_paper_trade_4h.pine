@@ -240,8 +240,7 @@ else if regime == -1
 else
     regimeColor := color.new(color.yellow, 90)
 
-if showRegimeBg
-    bgcolor(regimeColor, title="Regime Background")
+bgcolor(showRegimeBg ? regimeColor : na, title="Regime Background")
 
 plot(stValue, "Supertrend", color=isUptrend ? color.green : color.red, linewidth=2, style=plot.style_linebr)
 plot(ema50, "Trend EMA 50", color=color.blue, linewidth=2)
