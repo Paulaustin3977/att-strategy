@@ -44,7 +44,7 @@ class ATTStrategy:
     adx_len: int = 14          # `adxLen`
     atr_len: int = 14          # `atrLen`  (used for trailing-stop ATR)
     ema_len: int = 50          # `emaLen`  (50 EMA for regime filter)
-    rsi_len: int = 14          # `rsiLen`
+    rsi_len: int = 2           # `rsiLen`  (Connors-style short RSI)
     st_mult: float = 3.0       # `stMult`   Supertrend multiplier
     st_atr_len: int = 10       # `stAtrLen` Supertrend ATR period
     dmi_len: int = 14          # `dmiLen`   re-used for DMI
@@ -58,6 +58,14 @@ class ATTStrategy:
 
     # Regime flips: detect by ADX & DI+/DI- sign relative to close vs EMA
     regime_mode: str = "adx_di"  # 'adx_di' | 'supertrend' | 'hybrid'
+
+    # Mean-reversion arm (Paul's Pine `mrXxx` params).  Used when ADX is
+    # below ``adx_range`` (ranging regime) — RSI 2 over-extension in the
+    # direction of the structural 200-SMA trend is the MR entry trigger.
+    rsi_oversold: int = 10       # `rsiOversold`   (long MR trigger)
+    rsi_overbought: int = 90     # `rsiOverbought` (short MR trigger)
+    sma_trend_len: int = 200     # `smaTrendLen`   (structural trend filter)
+    mr_trail_mult: float = 1.5   # `mrTrailMult`   (tighter trail for MR)
 
     # Order / risk
     initial_capital: float = 10_000.0
@@ -180,6 +188,12 @@ def add_indicators(df: pd.DataFrame, params: ATTStrategy) -> pd.DataFrame:
     out["rsi"] = rsi(out["close"], params.rsi_len).values
     out["bbwpct"] = bbw_pct(out["close"], length=20, stddev=2.0, lookback=100).values
 
+    # Structural-trend filter for the mean-reversion arm.
+    # Paul's Pine `smaTrendLen` (default 200) — used by the MR entry to
+    # ensure MR-long entries only fire above structural uptrend and MR-short
+    # entries only fire below structural downtrend.
+    out["sma_trend"] = sma(out["close"], params.sma_trend_len).values
+
     # ATR used by Supertrend internally — needed for sizing
     a_st = atr(out, params.st_atr_len)
     out["atr_st"] = a_st.values
@@ -206,6 +220,11 @@ def generate_signals(df_with_indicators: pd.DataFrame, params: ATTStrategy) -> p
     enter_short = np.zeros(n, dtype=bool)
     exit_long = np.zeros(n, dtype=bool)
     exit_short = np.zeros(n, dtype=bool)
+    # ``is_mr`` flags whether an enter_long/enter_short signal was generated
+    # by the mean-reversion arm (so the engine can pick the appropriate
+    # tighter trail-mult for new MR entries).  Paul used different
+    # `mrTrailMult` for ranging MR entries vs trending entries.
+    is_mr = np.zeros(n, dtype=bool)
 
     prev_regime = 0
 
@@ -223,6 +242,7 @@ def generate_signals(df_with_indicators: pd.DataFrame, params: ATTStrategy) -> p
     bbw_vals = out["bbwpct"].values
     st_dir_vals = out["supertrend_dir"].astype(float).values
     atr_vals = out["atr_a"].values
+    sma_trend_vals = out["sma_trend"].values if "sma_trend" in out.columns else np.full(n, np.nan)
 
     for i in range(n):
         c = close_vals[i]
@@ -279,25 +299,65 @@ def generate_signals(df_with_indicators: pd.DataFrame, params: ATTStrategy) -> p
         # Use 1-bar ago cross of regime as a "fresh flip" entry trigger.
         prev_regime_eff = prev_regime if not np.isnan(prev_regime) else 0
 
-        # Long entry condition: prev regime != 1, current regime == 1, BBW filter OK,
-        # RSI not overbought, supertrend uptrend (direction == -1, Paul's Pine convention)
+        # Volatility confirmation — same BBW minimum gate used by both arms
+        vol_confirm = (np.isnan(bw) or bw > params.bbwpct_min)
+
+        # --- TREND arm (long/short) ---
+        # Long: prev regime != 1, cur regime == 1, BBW OK, RSI not overbought,
+        #       supertrend uptrend (direction == -1 in Paul's Pine convention).
         if (
             prev_regime_eff != 1
             and cur_regime == 1
-            and (np.isnan(bw) or bw > params.bbwpct_min)
+            and vol_confirm
             and (np.isnan(rv) or rv < 75.0)
             and (np.isnan(sd) or sd < 0)  # supertrend uptrend (Paul's Pine convention)
         ):
             enter_long[i] = True
+            is_mr[i] = False
 
         if (
             prev_regime_eff != -1
             and cur_regime == -1
-            and (np.isnan(bw) or bw > params.bbwpct_min)
+            and vol_confirm
             and (np.isnan(rv) or rv > 25.0)
             and (np.isnan(sd) or sd > 0)  # supertrend downtrend (Paul's Pine convention)
         ):
             enter_short[i] = True
+            is_mr[i] = False
+
+        # --- MEAN-REVERSION arm (Paul's Pine rsiOversold/rsiOverbought) ---
+        # Only fires when ADX is in range (cur_regime == 0 with ADX < range),
+        # which is exactly the "ranging" market.  We additionally require:
+        #   * structural trend filter (close vs SMA(sma_trend_len))
+        #   * RSI 2 over-extension in the direction of the structural trend
+        sma_v = sma_trend_vals[i] if i < len(sma_trend_vals) else np.nan
+
+        cur_adx = a
+        ranging = (not np.isnan(cur_adx)) and cur_adx < params.adx_range
+
+        # Long MR: close > SMA(structural uptrend), RSI < oversold,
+        #          ADX in range, BBW OK
+        if (
+            not enter_long[i]
+            and ranging
+            and vol_confirm
+            and (np.isnan(rv) or rv < params.rsi_oversold)
+            and (np.isnan(sma_v) or c > sma_v)  # structural uptrend
+        ):
+            enter_long[i] = True
+            is_mr[i] = True
+
+        # Short MR: close < SMA(structural downtrend), RSI > overbought,
+        #           ADX in range, BBW OK
+        if (
+            not enter_short[i]
+            and ranging
+            and vol_confirm
+            and (np.isnan(rv) or rv > params.rsi_overbought)
+            and (np.isnan(sma_v) or c < sma_v)  # structural downtrend
+        ):
+            enter_short[i] = True
+            is_mr[i] = True
 
         prev_regime = int(cur_regime)
 
@@ -306,6 +366,7 @@ def generate_signals(df_with_indicators: pd.DataFrame, params: ATTStrategy) -> p
     out["enter_short"] = enter_short
     out["exit_long"] = exit_long  # engine uses its own priority
     out["exit_short"] = exit_short
+    out["is_mr"] = is_mr
     return out
 
 

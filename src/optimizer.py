@@ -77,7 +77,8 @@ PARAM_GRID_COARSE: dict[str, list[Any]] = {
     "adx_len":       [10, 14, 20],
     "atr_len":       [10, 14, 20],
     "ema_len":       [50, 100, 200],
-    "rsi_len":       [2, 5, 14],
+    # RSI 2/3/5 — Connors-style short RSI.  Never 14 (wrong scale for MR).
+    "rsi_len":       [2, 3, 5],
     "dmi_len":       [10, 14, 20],
     "st_atr_len":    [10, 14, 20],
     # Supertrend multiplier
@@ -87,6 +88,11 @@ PARAM_GRID_COARSE: dict[str, list[Any]] = {
     "adx_range":     [15.0, 18.0, 20.0],
     # BBW volatility filter
     "bbwpct_min":    [0.05, 0.10, 0.20],
+    # ---- Mean-reversion arm params (Paul's Pine rsiXxx / smaXxx) ----
+    "rsi_oversold":  [5, 10, 15],
+    "rsi_overbought":[85, 90, 95],
+    "sma_trend_len": [100, 200],
+    "mr_trail_mult": [1.0, 1.5, 2.0],
     # Risk / trail
     "risk_pct":      [0.5, 1.0, 2.0],
     "trail_mult":    [1.5, 2.0, 3.0],
@@ -99,6 +105,8 @@ PARAM_GRID_COARSE: dict[str, list[Any]] = {
 INTEGER_PARAMS = {
     "adx_len", "atr_len", "ema_len", "rsi_len", "dmi_len", "st_atr_len",
     "max_bars_in_trade",
+    # MR-arm integer params
+    "rsi_oversold", "rsi_overbought", "sma_trend_len",
 }
 
 
@@ -478,6 +486,7 @@ def run_phase1(cfg: OptimizerConfig, symbols: list[str]) -> tuple[list[ComboSumm
     t0 = time.time()
     raw = _run_pool(cfg, symbols, combos)
     log.info("Phase 1 simulation wall-time: %.1fs, %d successful results", time.time() - t0, len(raw))
+    print(f"[phase1] simulation wall-time: {time.time() - t0:.1f}s, {len(raw)} results", flush=True)
 
     grouped = aggregate_combos(raw)
     summaries = [summarize_combo(g) for g in grouped.values()]
@@ -497,6 +506,7 @@ def run_phase2(cfg: OptimizerConfig, symbols: list[str],
     t0 = time.time()
     raw = _run_pool(cfg, symbols, combos)
     log.info("Phase 2 simulation wall-time: %.1fs, %d successful results", time.time() - t0, len(raw))
+    print(f"[phase2] simulation wall-time: {time.time() - t0:.1f}s, {len(raw)} results", flush=True)
 
     grouped = aggregate_combos(raw)
     summaries = [summarize_combo(g) for g in grouped.values()]
@@ -519,17 +529,24 @@ def _run_pool(cfg: OptimizerConfig, symbols: list[str],
     # gets roughly equal chunks.
     chunksize = max(1, len(work) // (n_jobs * 8))
     if n_jobs == 1:
-        for w in work:
+        for i, w in enumerate(work, 1):
             r = _evaluate_symbol_combo(w)
             if r is not None:
                 results.append(r)
+            if i % 100 == 0:
+                print(f"  [{i}/{len(work)}] {len(results)} ok", flush=True)
         return results
     import multiprocessing as mp
     ctx = mp.get_context("fork")
     with ctx.Pool(processes=n_jobs) as pool:
+        completed = 0
         for r in pool.imap_unordered(_evaluate_symbol_combo, work, chunksize=chunksize):
+            completed += 1
             if r is not None:
                 results.append(r)
+            if completed % 500 == 0:
+                print(f"  [{completed}/{len(work)}] {len(results)} ok", flush=True)
+    print(f"  [{completed}/{len(work)}] {len(results)} ok (done)", flush=True)
     return results
 
 

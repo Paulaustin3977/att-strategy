@@ -1,0 +1,19 @@
+Run timestamp: 2026-07-01T08:10:39.047110
+params: risk_pct=1.0, trail_mult=2.0, initial_capital=10000.0
+
+Symbols successful: 59
+Symbols requested : 59
+% profitable      : 66.10
+
+Top 5 by total_return:
+  CT_F         trades=  22 ret=  29.26% sharpe= 1.51 maxDD=  -4.04% win=63.64%
+  OJ_F         trades=  17 ret=  23.75% sharpe= 1.65 maxDD=  -2.21% win=76.47%
+  SI_F         trades=  15 ret=  19.78% sharpe= 0.94 maxDD=  -4.28% win=46.67%
+  EURAUD_X     trades=  17 ret=  19.33% sharpe= 0.98 maxDD=  -4.08% win=58.82%
+  GC_F         trades=  12 ret=  18.13% sharpe= 1.40 maxDD=  -2.90% win=75.00%
+Bottom 5 by total_return:
+  USDCAD_X     trades=  20 ret= -11.42% sharpe=-1.13 maxDD= -11.42% win=20.00%
+  NZDUSD_X     trades=  17 ret=  -7.08% sharpe=-0.65 maxDD=  -7.67% win=23.53%
+  NZDCAD_X     trades=  13 ret=  -5.13% sharpe=-0.58 maxDD=  -6.27% win=30.77%
+  RB_F         trades=  15 ret=  -4.73% sharpe=-0.51 maxDD=  -6.73% win=13.33%
+  EURUSD_X     trades=  12 ret=  -4.66% sharpe=-0.59 maxDD=  -5.98% win=16.67%

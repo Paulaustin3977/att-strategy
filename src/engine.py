@@ -38,6 +38,66 @@ def _floor(x: float) -> int:
     return int(math.floor(x)) if x is not None else 0
 
 
+def _trail_mult_for_entry(params: ATTStrategy, *, long_mr: bool, regime: int) -> float:
+    """Pick the appropriate trail-mult for a NEW entry.
+
+    For mean-reversion (ranging) entries (``long_mr`` is True) we use
+    ``mr_trail_mult`` (tighter) instead of ``trail_mult``. For trend
+    entries we use ``trail_mult``. Regime parameter is currently unused
+    but kept for forward-compatibility (e.g. future hybrid mode).
+    """
+    if long_mr:
+        return float(getattr(params, "mr_trail_mult", params.trail_mult))
+    return float(params.trail_mult)
+
+
+def _entry_atr(df: pd.DataFrame, i: int, params: ATTStrategy, *, use_st: bool = False) -> float:
+    """ATR for sizing a new entry.
+
+    Falls back gracefully through:
+      1. ``atr_a`` column (set by ``add_indicators`` — matches engine's
+         default column name)
+      2. ``atr_st`` column (Supertrend-period ATR; sometimes useful for
+         momentum entries)
+      3. NaN (caller will fall back to its own copy)
+    """
+    try:
+        col = "atr_st" if use_st else "atr_a"
+        if col in df.columns:
+            v = df[col].iloc[i]
+            if v is not None and not (isinstance(v, float) and math.isnan(v)):
+                return float(v)
+    except Exception:
+        pass
+    return float("nan")
+
+
+def _slippage_in_price(price: float, slip_value: float) -> float:
+    """Convert ``params.slippage`` to a *price-normalised* slippage.
+
+    Paul's Pine ``slippage=3`` was calibrated for stocks/commodities in
+    absolute price points.  Applied to a 1.05 EURUSD that makes a SHORT
+    entry fill at ``1.05 - 3 = -1.95`` — wildly nonsensical and the
+    source of the catastrophic FX results in Phase A2.
+
+    Here we interpret ``slippage`` as **basis points of price** (1 unit =
+    0.01% of price = 1 bp).  A ``slippage=3`` value therefore becomes
+    3 bps of price:
+
+        EURUSD  1.0500 → 0.000315 slip (3 bps)
+        GC=F    2000    → 0.60      slip
+        ES=F    4500    → 1.35      slip
+
+    These match the order of magnitude of the Pine model on each
+    instrument (a few ticks) while remaining safe across asset classes.
+    Negative or zero ``price`` falls back to zero slippage.
+    """
+    if price is None or price <= 0 or np.isnan(price) or slip_value <= 0:
+        return 0.0
+    # ``slippage`` is now interpreted as bps (1 unit = 0.0001 of price)
+    return float(price) * float(slip_value) * 1e-4
+
+
 # ---------------------------------------------------------------------------
 # Simulator
 # ---------------------------------------------------------------------------
@@ -78,6 +138,10 @@ def simulate(df: pd.DataFrame, params: ATTStrategy,
     regime_v = df["regime"].to_numpy(dtype=int, copy=True)
     enter_l = df["enter_long"].to_numpy(dtype=bool, copy=True)
     enter_s = df["enter_short"].to_numpy(dtype=bool, copy=True)
+    is_mr_v = (
+        df["is_mr"].to_numpy(dtype=bool, copy=True)
+        if "is_mr" in df.columns else np.zeros(n, dtype=bool)
+    )
 
     # 3. Persistent state (matches Pine `var`)
     equity = float(params.initial_capital)
@@ -181,11 +245,13 @@ def simulate(df: pd.DataFrame, params: ATTStrategy,
 
         # ---- Apply exit (fills at close-of-bar — we mark-to-market then settle) ----
         if exited and pos_side != 0:
-            # Apply slippage against the trader
+            # Apply slippage against the trader (price-normalised: scaled to
+            # the fill currency instead of the legacy absolute "3 price
+            # points" of Pine).
             if pos_side == 1:
-                fill = exit_price - slip
+                fill = exit_price - _slippage_in_price(exit_price, slip)
             else:
-                fill = exit_price + slip
+                fill = exit_price + _slippage_in_price(exit_price, slip)
             pnl = (fill - entry_price) * pos_qty * pos_side  # gross
             commission = abs(fill * pos_qty * comm_rate)
             pnl -= commission
@@ -228,37 +294,65 @@ def simulate(df: pd.DataFrame, params: ATTStrategy,
             next_open = open_v[i + 1]
             # Long signal
             if sig_l:
-                if not np.isnan(a) and a > 0 and not np.isnan(next_open):
+                if not np.isnan(a) and a > 0 and not np.isnan(next_open) and next_open > 0:
                     risk_dollars = equity * params.risk_pct / 100.0
                     if risk_dollars > 0:
-                        raw_qty = risk_dollars / (a * params.trail_mult)
-                        qty = _floor(raw_qty)
+                        # ---- PRICE-NORMALISED SIZING (Bug 1 fix) ----
+                        # Use the trail stop distance as a fraction of price
+                        # so 1% risk-per-trade means 1% of position value at
+                        # risk regardless of the asset's price scale (e.g.
+                        # EURUSD=1.10 vs GC=2000).
+                        cur_trail_mult = _trail_mult_for_entry(
+                            params, long_mr=bool(is_mr_v[i]), regime=int(regime_v[i])
+                        )
+                        cur_atr = _entry_atr(df, i, params, use_st=False)
+                        if np.isnan(cur_atr) or cur_atr <= 0:
+                            cur_atr = a
+                        stop_pct = (cur_atr * cur_trail_mult) / next_open
+                        if 0 < stop_pct < 0.20:
+                            raw_qty = risk_dollars / (next_open * stop_pct)
+                            qty = _floor(raw_qty)
+                        else:
+                            qty = 0  # ATR sanity check failed -> skip entry
                         if qty >= 1:
-                            entry_price = next_open + slip  # buy one tick + slippage up
+                            entry_slip = _slippage_in_price(next_open, slip)
+                            entry_price = next_open + entry_slip  # buy one tick + slippage up
                             commission = entry_price * qty * comm_rate
                             if equity > commission:
                                 pos_qty = float(qty)
                                 pos_side = 1
                                 entry_bar_idx = i + 1
                                 bars_in_trade = 0
-                                long_trail = entry_price - params.trail_mult * a  # initial stop at fill
+                                long_trail = entry_price - cur_trail_mult * cur_atr  # initial stop at fill
                                 # deduct commission from equity to keep things consistent
                                 equity -= commission
             elif sig_s:
-                if not np.isnan(a) and a > 0 and not np.isnan(next_open):
+                if not np.isnan(a) and a > 0 and not np.isnan(next_open) and next_open > 0:
                     risk_dollars = equity * params.risk_pct / 100.0
                     if risk_dollars > 0:
-                        raw_qty = risk_dollars / (a * params.trail_mult)
-                        qty = _floor(raw_qty)
+                        # ---- PRICE-NORMALISED SIZING (Bug 1 fix) ----
+                        cur_trail_mult = _trail_mult_for_entry(
+                            params, long_mr=bool(is_mr_v[i]), regime=int(regime_v[i])
+                        )
+                        cur_atr = _entry_atr(df, i, params, use_st=False)
+                        if np.isnan(cur_atr) or cur_atr <= 0:
+                            cur_atr = a
+                        stop_pct = (cur_atr * cur_trail_mult) / next_open
+                        if 0 < stop_pct < 0.20:
+                            raw_qty = risk_dollars / (next_open * stop_pct)
+                            qty = _floor(raw_qty)
+                        else:
+                            qty = 0
                         if qty >= 1:
-                            entry_price = next_open - slip  # sell one tick - slippage down
+                            entry_slip = _slippage_in_price(next_open, slip)
+                            entry_price = next_open - entry_slip  # sell one tick - slippage down
                             commission = entry_price * qty * comm_rate
                             if equity > commission:
                                 pos_qty = float(qty)
                                 pos_side = -1
                                 entry_bar_idx = i + 1
                                 bars_in_trade = 0
-                                short_trail = entry_price + params.trail_mult * a
+                                short_trail = entry_price + cur_trail_mult * cur_atr
                                 equity -= commission
 
         equity_curve[i] = mtm
@@ -267,9 +361,9 @@ def simulate(df: pd.DataFrame, params: ATTStrategy,
     if pos_side != 0:
         final_price = close_v[-1]
         if pos_side == 1:
-            fill = final_price - slip
+            fill = final_price - _slippage_in_price(final_price, slip)
         else:
-            fill = final_price + slip
+            fill = final_price + _slippage_in_price(final_price, slip)
         pnl = (fill - entry_price) * pos_qty * pos_side
         commission = abs(fill * pos_qty * comm_rate)
         pnl -= commission
