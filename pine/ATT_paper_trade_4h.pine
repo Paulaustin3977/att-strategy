@@ -1,0 +1,306 @@
+// This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © ATT Trading Strategy — Research-backed regime-switching system
+//
+// PAPER-TRADING VERSION — 4H TIMEFRAME — WINNER PARAMS (commit 01a6e48)
+//
+// Source repo:   https://github.com/Paulaustin3977/att-strategy
+// Optimizer run: results/multi_tf/4h_winner.json
+// Backtest stats: 46/59 symbols qualified, mean OOS Sharpe +0.138, 60.9% positive OOS, 100% MaxDD<35%
+//
+// USAGE:
+//   1. Paste this entire file into TradingView Pine Editor
+//   2. Save → "Add to chart" on a 4H chart of any paper-trade symbol
+//   3. Set up alerts: chart → "..." → "Add alert" → condition: "ATT Paper-Trade"
+//      For each alert, choose one of: "ATT Long Entry", "ATT Short Entry",
+//      "ATT Long Exit", "ATT Short Exit" (configured in the dialog).
+//   4. Connect alert to broker webhook (TradingView → broker integration, or use
+//      a custom webhook URL with a 3rd-party auto-executor like 3Commas/PineConnector).
+//
+// RECOMMENDED PAPER-TRADE BASKET (10 symbols, 4H):
+//   Tier 1 (start): GC=F, CL=F, ^GSPC, USDJPY=X, OJ=F
+//   Tier 2 (add after 1-2m): HG=F, ZS=F, ^RUT, NG=F, RB=F
+//   AVOID at 4H: NQ=F, EUR/GBP, GBP/JPY, USD/CHF, CAD/JPY, CT=F, HE=F, AUD/CHF, NZD/CAD
+//
+// PARAMETERS ARE LOCKED to the 4h walk-forward winner. Do NOT change them on
+// the live chart without re-running the optimizer — that would invalidate the
+// statistical validation. The inputs are exposed (grouped under "Strategy")
+// for documentation, but the strategy is fixed.
+//
+// NO LIVE TRADING. NO REAL CAPITAL. PAPER-TRADE FOR 3-6 MONTHS MINIMUM.
+
+ //@version=5
+strategy("ATT Paper-Trade 4H (winner params, basket)", 
+     overlay=true, 
+     default_qty_type=strategy.percent_of_equity, 
+     default_qty_value=10,
+     initial_capital=10000,
+     commission_type=strategy.commission.percent, 
+     commission_value=0.05,
+     pyramiding=0,
+     slippage=3,
+     calc_on_every_tick=false,
+     process_orders_on_close=false,
+     max_bars_back=5000)
+
+// ═══════════════════════════════════════════════════════════════
+// INPUTS — locked to 4h walk-forward winner (do not change)
+// ═══════════════════════════════════════════════════════════════
+
+// ── Regime Detection ──
+grp_regime = "Regime Detection"
+adxLen        = input.int(20,  "ADX Length",                minval=5,  maxval=50, group=grp_regime)
+adxTrendLvl   = input.float(30.0, "ADX Trending Threshold",   minval=15, maxval=40, group=grp_regime)
+adxRangeLvl   = input.float(20.0, "ADX Ranging Threshold",    minval=10, maxval=adxTrendLvl, group=grp_regime)
+bbwLen        = input.int(20,  "Bollinger Band Width Length", minval=10, maxval=50, group=grp_regime)
+bbwPctLookback = input.int(120, "BBW Percentile Lookback",  minval=50, maxval=250, group=grp_regime)
+bbwStdDev     = input.float(2.0, "BB Std Dev",               minval=1.0, maxval=3.5, step=0.1, group=grp_regime)
+
+// ── Trend-Following (Trending Regime) ──
+grp_trend = "Trend Following (Trending Regime)"
+stAtrPeriod  = input.int(14,  "Supertrend ATR Period",     minval=5,  maxval=30, group=grp_trend)
+stMultiplier = input.float(2.0, "Supertrend Multiplier",    minval=1.5, maxval=5.0, step=0.1, group=grp_trend, tooltip="WINNER: 2.0")
+trailAtrLen   = input.int(14,  "Trailing Stop ATR Period",  minval=7,  maxval=30, group=grp_trend)
+trailMult     = input.float(1.5, "Trailing Stop ATR Mult",   minval=1.0, maxval=5.0, step=0.1, group=grp_trend, tooltip="WINNER: 1.5")
+emaTrendLen   = input.int(100, "Trend EMA Length",          minval=20, maxval=200, group=grp_trend, tooltip="WINNER: 100")
+volSmaLen     = input.int(20,  "Volume SMA Length",         minval=10, maxval=50, group=grp_trend)
+useVolFilter  = input.bool(true, "Require Volume Confirmation", group=grp_trend)
+
+// ── Mean Reversion (Ranging Regime) ──
+grp_revert = "Mean Reversion (Ranging Regime)"
+rsiLen        = input.int(2,   "RSI Length (Mean Rev)",     minval=2,  maxval=5,  group=grp_revert, tooltip="WINNER: 2 — Connors RSI2")
+rsiOversold   = input.int(10,  "RSI Oversold Level",        minval=5,  maxval=20, group=grp_revert, tooltip="WINNER: 10")
+rsiOverbought = input.int(85,  "RSI Overbought Level",      minval=80, maxval=95, group=grp_revert, tooltip="WINNER: 85")
+smaTrendLen   = input.int(200, "Long-term Trend Filter SMA", minval=100, maxval=300, group=grp_revert, tooltip="WINNER: 200")
+mrTrailMult   = input.float(2.0, "Mean Rev Trail ATR Mult",  minval=1.0, maxval=3.0, step=0.1, group=grp_revert, tooltip="WINNER: 2.0")
+
+// ── Risk Management ──
+grp_risk = "Risk Management"
+riskPct       = input.float(1.0, "Risk % Per Trade",         minval=0.25, maxval=5.0, step=0.25, group=grp_risk, tooltip="WINNER: 1.0%")
+atrSizingLen  = input.int(14,  "Position Sizing ATR Period", minval=7,  maxval=30, group=grp_risk)
+maxBarsInTrade = input.int(30,  "Max Bars In Trade (Dead Money Exit)", minval=5, maxval=50, group=grp_risk, tooltip="WINNER: 30")
+deadMoneyPct  = input.float(0.25, "Dead Money Threshold %",  minval=0.10, maxval=2.0, step=0.05, group=grp_risk, tooltip="WINNER: 0.25%")
+
+// ── Visual ──
+grp_vis = "Visual"
+showRegimeBg  = input.bool(true,  "Show Regime Background",   group=grp_vis)
+showTrails    = input.bool(true,  "Show Trailing Stops",      group=grp_vis)
+showLabels    = input.bool(true,  "Show Entry/Exit Labels",   group=grp_vis)
+
+// ═══════════════════════════════════════════════════════════════
+// INDICATOR CALCULATIONS
+// ═══════════════════════════════════════════════════════════════
+
+// ── ATR ──
+atr14 = ta.atr(atrSizingLen)
+atrTrail = ta.atr(trailAtrLen)
+
+// ── ADX + DI ──
+[diPlus, diMinus, adx] = ta.dmi(adxLen, adxLen)
+adxSlope = adx - adx[1]
+
+// ── Supertrend (TradingView convention: stDir < 0 = uptrend) ──
+[stValue, stDir] = ta.supertrend(stMultiplier, stAtrPeriod)
+isUptrend = stDir < 0
+isDowntrend = stDir > 0
+
+// ── EMA Trend ──
+ema50 = ta.ema(close, emaTrendLen)
+emaSlope = (ema50 - ema50[5]) / ema50[5] * 100
+
+// ── Volume ──
+volSma = ta.sma(volume, volSmaLen)
+volConfirm = not useVolFilter or (volume > volSma)
+
+// ── Bollinger Bands & BBW ──
+bbBasis = ta.sma(close, bbwLen)
+bbDev = bbwStdDev * ta.stdev(close, bbwLen)
+bbUpper = bbBasis + bbDev
+bbLower = bbBasis - bbDev
+bbWidth = (bbUpper - bbLower) / bbBasis * 100
+bbwPct = ta.percentrank(bbWidth, bbwPctLookback)
+isSqueeze = bbwPct < 25
+
+// ── RSI ──
+rsi2 = ta.rsi(close, rsiLen)
+
+// ── Long-term SMA ──
+sma200 = ta.sma(close, smaTrendLen)
+
+// ═══════════════════════════════════════════════════════════════
+// REGIME DETECTION
+// ═══════════════════════════════════════════════════════════════
+
+var int regime = 0
+
+if adx > adxTrendLvl and adxSlope > 0
+    regime := 1
+else if adx < adxRangeLvl and bbwPct < 40
+    regime := -1
+else
+    regime := 0
+
+// ═══════════════════════════════════════════════════════════════
+// TRAILING STOP LOGIC (persists across bars via var)
+// ═══════════════════════════════════════════════════════════════
+
+var float longTrail = na
+var float shortTrail = na
+var int barsInTrade = 0
+
+// ── ATR Trailing Stop for Longs ──
+if strategy.position_size > 0
+    barsInTrade += 1
+    newTrail = close - trailMult * atrTrail
+    longTrail := math.max(nz(longTrail, newTrail), newTrail)
+else
+    longTrail := na
+    barsInTrade := 0
+
+// ── ATR Trailing Stop for Shorts ──
+if strategy.position_size < 0
+    barsInTrade += 1
+    newTrail = close + trailMult * atrTrail
+    shortTrail := math.min(nz(shortTrail, newTrail), newTrail)
+else if strategy.position_size > 0
+    shortTrail := na
+
+if strategy.position_size == 0
+    shortTrail := na
+    barsInTrade := 0
+
+// ═══════════════════════════════════════════════════════════════
+// POSITION SIZING — price-normalised (matches Python port)
+// ═══════════════════════════════════════════════════════════════
+
+riskAmount = strategy.equity * riskPct / 100
+atrDistance = atr14 * trailMult
+stopPct = atrDistance / close
+qtyFloat = (stopPct > 0 and stopPct < 0.20) ? (riskAmount / (close * stopPct)) : 0
+qtyShares = math.max(math.floor(qtyFloat), 1)
+
+// ═══════════════════════════════════════════════════════════════
+// ENTRY LOGIC
+// ═══════════════════════════════════════════════════════════════
+
+// ── TRENDING REGIME: Supertrend + EMA + Volume Confluence ──
+longTrendEntry = regime == 1 and isUptrend and close > ema50 and volConfirm and rsi2 < 70
+shortTrendEntry = regime == 1 and isDowntrend and close < ema50 and volConfirm and rsi2 > 30
+
+// ── RANGING REGIME: RSI2 Mean Reversion (Connors/Alvarez) ──
+longMeanRevEntry = regime == -1 and rsi2 < rsiOversold and close > sma200 and volConfirm
+shortMeanRevEntry = regime == -1 and rsi2 > rsiOverbought and close < sma200 and volConfirm
+
+// ── SQUEEZE BREAKOUT: BB Squeeze → Expansion ──
+squeezeLongEntry = isSqueeze[1] and not isSqueeze and close > bbUpper and close > ema50 and volConfirm
+squeezeShortEntry = isSqueeze[1] and not isSqueeze and close < bbLower and close < ema50 and volConfirm
+
+// ── Combine entries ──
+enterLong  = (longTrendEntry or longMeanRevEntry or squeezeLongEntry) and strategy.position_size == 0
+enterShort = (shortTrendEntry or shortMeanRevEntry or squeezeShortEntry) and strategy.position_size == 0
+
+// ═══════════════════════════════════════════════════════════════
+// EXIT LOGIC
+// ═══════════════════════════════════════════════════════════════
+
+exitLongTrail = strategy.position_size > 0 and close < longTrail
+exitLongDeadMoney = strategy.position_size > 0 and barsInTrade >= maxBarsInTrade and (close - strategy.position_avg_price) / strategy.position_avg_price * 100 < deadMoneyPct
+exitLongRegimeFlip = strategy.position_size > 0 and regime == -1 and adx < adxRangeLvl and close < ema50
+
+exitShortTrail = strategy.position_size < 0 and close > shortTrail
+exitShortDeadMoney = strategy.position_size < 0 and barsInTrade >= maxBarsInTrade and (strategy.position_avg_price - close) / strategy.position_avg_price * 100 < deadMoneyPct
+exitShortRegimeFlip = strategy.position_size < 0 and regime == -1 and adx < adxRangeLvl and close > ema50
+
+exitLong  = exitLongTrail or exitLongDeadMoney or exitLongRegimeFlip
+exitShort = exitShortTrail or exitShortDeadMoney or exitShortRegimeFlip
+
+// ═══════════════════════════════════════════════════════════════
+// STRATEGY EXECUTION
+// ═══════════════════════════════════════════════════════════════
+
+if enterLong
+    strategy.entry("Long", strategy.long, qty=qtyShares)
+
+if enterShort
+    strategy.entry("Short", strategy.short, qty=qtyShares)
+
+if exitLong
+    strategy.close("Long", comment="Trail/Dead/Regime")
+
+if exitShort
+    strategy.close("Short", comment="Trail/Dead/Regime")
+
+// ═══════════════════════════════════════════════════════════════
+// VISUALIZATION
+// ═══════════════════════════════════════════════════════════════
+
+var color regimeColor = na
+if regime == 1
+    regimeColor := color.new(color.green, 90)
+else if regime == -1
+    regimeColor := color.new(color.orange, 90)
+else
+    regimeColor := color.new(color.yellow, 90)
+
+if showRegimeBg
+    bgcolor(regimeColor, title="Regime Background")
+
+plot(stValue, "Supertrend", color=isUptrend ? color.green : color.red, linewidth=2, style=plot.style_linebr)
+plot(ema50, "Trend EMA 50", color=color.blue, linewidth=2)
+plot(sma200, "Long-term SMA 200", color=color.gray, linewidth=1)
+plot(bbUpper, "BB Upper", color=color.new(color.purple, 50), linewidth=1)
+plot(bbBasis, "BB Basis", color=color.new(color.purple, 50), linewidth=1)
+plot(bbLower, "BB Lower", color=color.new(color.purple, 50), linewidth=1)
+
+plot(showTrails and strategy.position_size > 0 ? longTrail : na, "Long Trail Stop", color=color.lime, style=plot.style_cross, linewidth=2)
+plot(showTrails and strategy.position_size < 0 ? shortTrail : na, "Short Trail Stop", color=color.red, style=plot.style_cross, linewidth=2)
+
+if showLabels
+    if enterLong
+        label.new(bar_index, low, "L", style=label.style_label_up, color=color.green, textcolor=color.white, size=size.small)
+    if enterShort
+        label.new(bar_index, high, "S", style=label.style_label_down, color=color.red, textcolor=color.white, size=size.small)
+    if exitLong
+        label.new(bar_index, high, "XL", style=label.style_label_down, color=color.lime, textcolor=color.black, size=size.small)
+    if exitShort
+        label.new(bar_index, low, "XS", style=label.style_label_up, color=color.maroon, textcolor=color.white, size=size.small)
+
+// ── Info Table ──
+var table infoPanel = table.new(position.top_right, 2, 8, bgcolor=color.new(color.black, 20), border_width=1)
+
+regimeText = regime == 1 ? "TRENDING" : regime == -1 ? "RANGING" : "TRANSITION"
+regimeTxtColor = regime == 1 ? color.green : regime == -1 ? color.orange : color.yellow
+
+if barstate.islast
+    table.cell(infoPanel, 0, 0, "Regime", text_color=color.white, text_size=size.small)
+    table.cell(infoPanel, 1, 0, regimeText, text_color=regimeTxtColor, text_size=size.small)
+    table.cell(infoPanel, 0, 1, "ADX", text_color=color.white, text_size=size.small)
+    table.cell(infoPanel, 1, 1, str.tostring(adx, "#.1"), text_color=color.white, text_size=size.small)
+    table.cell(infoPanel, 0, 2, "Supertrend", text_color=color.white, text_size=size.small)
+    table.cell(infoPanel, 1, 2, isUptrend ? "UP" : "DOWN", text_color=isUptrend ? color.green : color.red, text_size=size.small)
+    table.cell(infoPanel, 0, 3, "RSI2", text_color=color.white, text_size=size.small)
+    table.cell(infoPanel, 1, 3, str.tostring(rsi2, "#.0"), text_color=color.white, text_size=size.small)
+    table.cell(infoPanel, 0, 4, "BBW%", text_color=color.white, text_size=size.small)
+    table.cell(infoPanel, 1, 4, str.tostring(bbwPct, "#.0"), text_color=color.white, text_size=size.small)
+    table.cell(infoPanel, 0, 5, "Trail Stop", text_color=color.white, text_size=size.small)
+    table.cell(infoPanel, 1, 5, strategy.position_size > 0 ? str.tostring(longTrail, "#.##") : strategy.position_size < 0 ? str.tostring(shortTrail, "#.##") : "—", text_color=color.white, text_size=size.small)
+    table.cell(infoPanel, 0, 6, "Bars In Trade", text_color=color.white, text_size=size.small)
+    table.cell(infoPanel, 1, 6, strategy.position_size != 0 ? str.tostring(barsInTrade) : "0", text_color=color.white, text_size=size.small)
+    table.cell(infoPanel, 0, 7, "TF", text_color=color.white, text_size=size.small)
+    table.cell(infoPanel, 1, 7, timeframe.period, text_color=color.yellow, text_size=size.small)
+
+// ═══════════════════════════════════════════════════════════════
+// ALERTS — for webhook / TradingView-to-broker automation
+// ═══════════════════════════════════════════════════════════════
+
+alertcondition(enterLong,  "ATT Long Entry",  "ATT 4h Long Entry: {{ticker}} @ {{close}} | qty={{strategy.position_size}}")
+alertcondition(enterShort, "ATT Short Entry", "ATT 4h Short Entry: {{ticker}} @ {{close}} | qty={{strategy.position_size}}")
+alertcondition(exitLong,  "ATT Long Exit",  "ATT 4h Long Exit: {{ticker}} @ {{close}} | reason=Trail/Dead/Regime")
+alertcondition(exitShort, "ATT Short Exit", "ATT 4h Short Exit: {{ticker}} @ {{close}} | reason=Trail/Dead/Regime")
+
+// ═══════════════════════════════════════════════════════════════
+// SAFETY: warn if not on 4H
+// ═══════════════════════════════════════════════════════════════
+
+var table warningPanel = table.new(position.bottom_left, 1, 1, bgcolor=color.new(color.red, 20), border_width=1)
+if barstate.islast and timeframe.period != "240"
+    table.cell(warningPanel, 0, 0, "WARNING: This strategy is calibrated for 4H (240m). Current TF: " + timeframe.period + ". Edges will not match backtest.", text_color=color.white, text_size=size.normal)
