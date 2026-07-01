@@ -50,7 +50,7 @@ strategy("ATT Paper-Trade 4H (winner params, basket)",
 grp_regime = "Regime Detection"
 adxLen        = input.int(20,  "ADX Length",                minval=5,  maxval=50, group=grp_regime)
 adxTrendLvl   = input.float(30.0, "ADX Trending Threshold",   minval=15, maxval=40, group=grp_regime)
-adxRangeLvl   = input.float(20.0, "ADX Ranging Threshold",    minval=10, maxval=adxTrendLvl, group=grp_regime)
+adxRangeLvl   = input.float(20.0, "ADX Ranging Threshold",    minval=10, maxval=29.0, group=grp_regime, tooltip="Must be < ADX Trending Threshold (Pine requires literal maxval)")
 bbwLen        = input.int(20,  "Bollinger Band Width Length", minval=10, maxval=50, group=grp_regime)
 bbwPctLookback = input.int(120, "BBW Percentile Lookback",  minval=50, maxval=250, group=grp_regime)
 bbwStdDev     = input.float(2.0, "BB Std Dev",               minval=1.0, maxval=3.5, step=0.1, group=grp_regime)
