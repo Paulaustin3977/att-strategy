@@ -39,8 +39,7 @@ strategy("ATT Paper-Trade 4H (winner params, basket)",
      pyramiding=0,
      slippage=3,
      calc_on_every_tick=false,
-     process_orders_on_close=false,
-     max_bars_back=5000)
+     process_orders_on_close=false)
 
 // ═══════════════════════════════════════════════════════════════
 // INPUTS — locked to 4h walk-forward winner (do not change)
