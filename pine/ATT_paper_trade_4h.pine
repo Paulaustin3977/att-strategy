@@ -28,7 +28,7 @@
 //
 // NO LIVE TRADING. NO REAL CAPITAL. PAPER-TRADE FOR 3-6 MONTHS MINIMUM.
 
- //@version=5
+ //@version=6
 strategy("ATT Paper-Trade 4H (winner params, basket)", 
      overlay=true, 
      default_qty_type=strategy.percent_of_equity, 
